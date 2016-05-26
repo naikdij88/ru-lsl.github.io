@@ -34,9 +34,14 @@
     
     <script type="text/javascript">
   		VK.init(function() {
-					VK.callMethod("scrollSubscribe",boo,fireEvent);
-					VK.callMethod("resizeWindow", 510, 600);  				
-     				console.log('все гуд!!!');
+					VK.callMethod("scrollSubscribe",fireEvent);
+					VK.addCallback("onScroll", onSettingsChanged); 
+					function onSettingsChanged(settings) {
+			
+							console.log('все гуд!!!');
+					}
+					 				
+     				//console.log('все гуд!!!');
   		}, function() {
      			// API initialization failed
      			// Can reload page here
