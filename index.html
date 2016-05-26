@@ -39,12 +39,7 @@
   function(){
    	VK.callMethod('scrollSubscribe');
 	});
-	VK.addCallback("onScroll", onSettingsChanged);
 
-function onSettingsChanged(settings) {
- console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+settings);
- $('.pp_pic_holder')css('top','' + settings);
-};	
 	
     function autosize(width) {
         //Проверяем элемент body на наличие.
