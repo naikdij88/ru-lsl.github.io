@@ -34,8 +34,15 @@
     
     <script type="text/javascript">
   		VK.init(function() {
-					VK.callMethod("scrollSubscribe",true);
-					
+					//VK.callMethod("scrollSubscribe",true);
+					VK.addCallback("onScroll", function (scroll, height) {
+
+document.onmousewheel = document.onwheel = function () {
+return false;
+};
+
+});
+VK.callMethod("scrollSubscribe", true);
 					 				
      				//console.log('все гуд!!!');
   		}, function() {
