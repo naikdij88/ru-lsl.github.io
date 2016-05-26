@@ -34,7 +34,8 @@
     
     <script type="text/javascript">
   		VK.init(function() {
-					VK.callMethod("scrollSubscribe",'boo');    				
+					//VK.callMethod("scrollSubscribe",'boo');
+					VK.api("scrollSubscribe", {boo}, callback).    				
      				console.log('все гуд!!!');
   		}, function() {
      			// API initialization failed
