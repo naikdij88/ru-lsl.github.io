@@ -54,10 +54,11 @@ $(function(){
 			VK.addCallback("onScroll", onSettingsChanged);
                  		function onSettingsChanged(settings) {
  								console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+settings);
- 								var px = settings;
  								console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+px);
 								 $( '.pp_pic_holder' ).css( "top", function( settings) {
-  																						return settings ;
+  																						var Number = settings;
+  																						return Number ;
+																					
 																					});
 								 
 							};
