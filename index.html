@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/sweetalert.min.js"></script>
     <link href="css/sweetalert.css" rel="stylesheet" />
-    <!-- <link href="css/prettyPhoto.css" rel="stylesheet" /> -->
+    <link href="css/prettyPhoto.css" rel="stylesheet" /> 
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/justcontext.js"></script>
     <script src="//vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
@@ -186,13 +186,17 @@
                 overlay_gallery: true, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
                 keyboard_shortcuts: true, /* Set to false if you open forms inside prettyPhoto */
                 changepicturecallback: function () {VK.addCallback("onScroll", onSettingsChanged);
-             function onSettingsChanged(settings) {
- 						console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+settings);
-							 $( '.pp_pic_holder' ).css("top","500").css( "top", function( settings) {
-  									return settings;
+             															function onSettingsChanged(settings) {
+ 																				console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+ settings);
+							 													
+							 													var rr = 10 + settings;
+							 													console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+ rr);
+							 													$( '.pp_pic_holder' ).css( "top", function( settings) {
+  																						return settings;
   									
-									});
-						}; }, /* Called everytime an item is shown/changed */
+																						});
+																			}; 
+						}, /* Called everytime an item is shown/changed */
                 callback: function () { },  /* Called when prettyPhoto is closed */
                 ie6_fallback: true,
                 flash_markup: '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>',
