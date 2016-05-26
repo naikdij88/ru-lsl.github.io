@@ -192,8 +192,12 @@
 							 													var rr = 10 + settings;
 							 													console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+ rr);
 							 													
-							 													$( '.pp_pic_holder' ).top(settings);
-							 													console.log($( '.pp_content_container' ).height());
+							 													$( '.pp_pic_holder' ).css( "top", function( settings) {
+  																					
+  																					var tt = $(this).height(settings);
+  																					return tt;
+  									
+																						});
 																			}; 
 						}, /* Called everytime an item is shown/changed */
                 callback: function () { },  /* Called when prettyPhoto is closed */
