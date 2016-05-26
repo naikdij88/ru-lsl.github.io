@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/sweetalert.min.js"></script>
     <link href="css/sweetalert.css" rel="stylesheet" />
-    <link href="css/prettyPhoto.css" rel="stylesheet" />
+    <!-- <link href="css/prettyPhoto.css" rel="stylesheet" /> -->
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/justcontext.js"></script>
     <script src="//vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
@@ -189,7 +189,7 @@
              function onSettingsChanged(settings) {
  						console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+settings);
 							 $( '.pp_pic_holder' ).css("top","500").css( "top", function( settings) {
-  									return settings + "px";
+  									return settings;
   									
 									});
 						}; }, /* Called everytime an item is shown/changed */
