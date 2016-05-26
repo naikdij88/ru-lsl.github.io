@@ -40,13 +40,13 @@
    	VK.callMethod('scrollSubscribe');
 	});
 			VK.addCallback("onScroll", onSettingsChanged);
-             function onSettingsChanged(settings) {
+             //function onSettingsChanged(settings) {
  						console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+settings);
-							 $( '.pp_pic_holder' ).css( "top", function( settings) {
-  									return settings + "px";
+							 $( '.pp_pic_holder' ).css( "top", function onSettingsChanged(settings) {
+  									return settings;
   									
 									});
-						};
+						//};
 	
     function autosize(width) {
         //Проверяем элемент body на наличие.
