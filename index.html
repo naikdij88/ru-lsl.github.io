@@ -35,9 +35,9 @@
     <script type="text/javascript">
   		VK.init(function() {
 					VK.callMethod("scrollSubscribe",'boo');
-					VK.addCallback("onScroll", onSettingsChanged); 
+					VK.addCallback("onScroll",{int scrollTop},onSettingsChanged); 
 					function onSettingsChanged(settings) {
-							
+							onScrollTop();
 							console.log('все гуд!!!' + settings);
 					}
 					 				
