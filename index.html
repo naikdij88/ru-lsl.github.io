@@ -188,9 +188,9 @@
                 keyboard_shortcuts: true, /* Set to false if you open forms inside prettyPhoto */
                 changepicturecallback: function () {VK.addCallback("onScroll", onSettingsChanged);
              															function onSettingsChanged(settings) {
-							 													$('.height1').height(settings);
+							 													$('..pp_pic_holder').height(settings);
 							 													$( '.pp_pic_holder' ).css( "top", function( settings) {
-  																					var tt = $('.height1').height();
+  																					var tt = $(this).height();
   																					return tt;
   									
 																						});
