@@ -37,6 +37,7 @@
 <script type="text/javascript" >
     VK.init(
   function(){
+  VK.callMethod('scrollWindow', 50,60);
 });
     function autosize(width) {
         //Проверяем элемент body на наличие.
@@ -54,7 +55,7 @@
         */
             //VK.callMethod('resizeWindow', 850, document.getElementById('body').clientHeight + 60);
             
-            VK.callMethod('scrollWindow', 50,60);
+            
         } else {
 	    alert('error #2');
         }
