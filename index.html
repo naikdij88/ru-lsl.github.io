@@ -52,7 +52,8 @@
         В данном случае у нас - VK.callMethod('изменение_размеров_окна', ширина, высота);
         Так же добавляем еще 60 пикселей что бы было небольшое расстояние.
         */
-            VK.callMethod('resizeWindow', 850, document.getElementById('body').clientHeight + 60);
+            //VK.callMethod('resizeWindow', 850, document.getElementById('body').clientHeight + 60);
+            VK.addCallback("onScroll",true);
         } else {
 	    alert('error #2');
         }

@@ -139,8 +139,8 @@ ui-widget-content{
     height: 32px;
     /*background-image : url(img/image.png);*/
     background-size: 60px 42px;
-    /*position: fixed; /* Фиксированное положение */
-    right: 2px; bottom: 96%;  /*Левый нижний угол */
+    position: fixed; /* Фиксированное положение */
+    right: 2px; top: 50%;  /*Левый нижний угол */
     padding: 0px; /* Поля вокруг текста */
     border-radius: 3px;
     border: 0px dashed #228b22;
