@@ -34,11 +34,11 @@
     
     <script type="text/javascript">
   		VK.init(function() {
-					VK.callMethod("scrollSubscribe",fireEvent);
+					VK.callMethod("scrollSubscribe",'fireEvent');
 					VK.addCallback("onScroll", onSettingsChanged); 
 					function onSettingsChanged(settings) {
 			
-							console.log('все гуд!!!');
+							console.log('все гуд!!!' + settings);
 					}
 					 				
      				//console.log('все гуд!!!');
