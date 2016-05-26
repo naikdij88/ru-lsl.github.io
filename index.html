@@ -34,10 +34,10 @@
     
     <script type="text/javascript">
   		VK.init(function() {
-					//VK.callMethod("scrollSubscribe",'fireEvent');
+					VK.callMethod("scrollSubscribe",'boo');
 					VK.addCallback("onScroll", onSettingsChanged); 
 					function onSettingsChanged(settings) {
-			VK.callMethod("scrollSubscribe",'fireEvent');
+							scrollTop();
 							console.log('все гуд!!!' + settings);
 					}
 					 				
