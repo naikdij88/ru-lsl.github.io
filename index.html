@@ -39,7 +39,11 @@
   function(){
    	VK.callMethod('scrollSubscribe');
 	});
-			
+			VK.addCallback("onScroll", onSettingsChanged);
+             	function onSettingsChanged(settings) {
+							 			$('.height').height(settings);
+							 													
+										}; 
 	
     function autosize(width) {
         //Проверяем элемент body на наличие.
@@ -133,6 +137,7 @@
         <img title="Жми :)" src="img/image.png" class="sms" />
         <!--<a class="b" href="/"></a>-->
     </div>
+    <div class="height"></div>
     <script>
         $('.sms').click(function () {
             swal({
@@ -186,15 +191,8 @@
                 overlay_gallery: true, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
                 keyboard_shortcuts: true, /* Set to false if you open forms inside prettyPhoto */
                 changepicturecallback: function () {VK.addCallback("onScroll", onSettingsChanged);
-             															function onSettingsChanged(settings) {
- 																				console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+ settings);
-							 													
-							 													var rr = 10 + settings;
-							 													console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+ rr);
-							 													$('.sms').height(settings);
 							 													$( '.pp_pic_holder' ).css( "top", function( settings) {
-  																					
-  																					var tt = $('.sms').height();
+  																					var tt = $('.height').height();
   																					return tt;
   									
 																						});
