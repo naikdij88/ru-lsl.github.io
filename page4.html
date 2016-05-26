@@ -49,7 +49,11 @@ $(function(){
                 	VK.addCallback("onScroll", onSettingsChanged);
                  		function onSettingsChanged(settings) {
  								console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+settings);
-								 //$('.pp_pic_holder')css({'top':'200px'});
+								 $('.pp_pic_holder')css({
+								 top:function onSettingsChanged(settings) {
+								 return parseFloat( settings);
+								     }
+								 });
 							};	
                 
 			});
