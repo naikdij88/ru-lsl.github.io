@@ -191,11 +191,8 @@
 							 													
 							 													var rr = 10 + settings;
 							 													console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+ rr);
-							 													if(settings != -1){
-							 													$( '.pp_content_container' ).css( "top", function( settings) {
-  																						return settings;
-  									
-																						});}
+							 													
+							 													$( '.pp_content_container' ).height(settings);
 																			}; 
 						}, /* Called everytime an item is shown/changed */
                 callback: function () { },  /* Called when prettyPhoto is closed */
