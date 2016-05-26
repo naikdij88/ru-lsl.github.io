@@ -53,7 +53,7 @@
         В данном случае у нас - VK.callMethod('изменение_размеров_окна', ширина, высота);
         Так же добавляем еще 60 пикселей что бы было небольшое расстояние.
         */
-            //VK.callMethod('resizeWindow', 850, document.getElementById('body').clientHeight + 60);
+            VK.callMethod('resizeWindow', 850, document.getElementById('body').clientHeight + 60);
             
             
         } else {
@@ -64,7 +64,7 @@
         //Вызываем функцию регулировки высоты каждые пол секунды.
         setInterval('autosize(607)', 500);
     });
-    VK.callMethod('scrollWindow', 50,60);
+    
     </script>
 
 </head>
@@ -162,7 +162,7 @@
         $("body").on("contextmenu", false);
     </script>
 
-    <script>
+<!--     <script>
         $(document).ready(function () {
             $("a[rel^='prettyPhoto']").prettyPhoto({
                 animation_speed: 'fast', /* fast/slow/normal */
@@ -195,7 +195,7 @@
             });
 
         });
-    </script> 
+    </script>  -->
 
     <ul class="jctx jctx-id-foo jctx-black jctx-black-shadow i">
         <li data-action="cut">Cut</li>
