@@ -37,8 +37,14 @@
 <script type="text/javascript" >
     VK.init(
   function(){
-   VK.callMethod('scrollWindow');
-});
+   	VK.callMethod('scrollWindow');
+	});
+	VK.addCallback("onScroll", onSettingsChanged);
+
+function onSettingsChanged(settings) {
+ console.log(settings);
+};	
+	
     function autosize(width) {
         //Проверяем элемент body на наличие.
         if (!document.getElementById('body')) {
