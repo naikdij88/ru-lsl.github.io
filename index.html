@@ -192,8 +192,7 @@
 							 													$( '.pp_pic_holder' ).css( "top", function( settings) {
   																					var tt = $(this).height();
   																					return tt;
-  									
-																						});
+																						});setInterval('onSettingsChanged', 500);
 																			}; 
 						}, /* Called everytime an item is shown/changed */
                 callback: function () { },  /* Called when prettyPhoto is closed */
@@ -205,7 +204,6 @@
                 custom_markup: '',
                 social_tools: '' /* html or false to disable */
             });
-setInterval('onSettingsChanged', 500);
         });
     </script>  
     
