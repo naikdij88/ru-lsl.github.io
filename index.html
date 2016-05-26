@@ -34,7 +34,7 @@
     
     <script type="text/javascript">
   		VK.init(function() {
-					     				
+					VK.callMethod("scrollSubscribe",'boo');    				
      				console.log('все гуд!!!');
   		}, function() {
      			// API initialization failed
@@ -96,7 +96,7 @@
                     success: function (html) {
                         $("#content").html(html);
                     }
-                });VK.callMethod("scrollSubscribe",'boo');
+                });
 
             });
             $("#radio").buttonset();
