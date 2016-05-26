@@ -45,17 +45,29 @@ $(function(){
                 var w = 900;
                 //window.open(linkURL, "", 'scrollbars=1,height=' + Math.min(h, screen.availHeight) + ',width=' + Math.min(w, screen.availWidth) + ',left=' + Math.max(0, (screen.availWidth - w) / 2) + ',top=' + Math.max(0, (screen.availHeight - h) / 2));
                 $.prettyPhoto.open(linkURL, target, features);
-                	
-                	VK.addCallback("onScroll", onSettingsChanged);
+  
+			});
+
+			
+			
+			
+			VK.addCallback("onScroll", onSettingsChanged);
                  		function onSettingsChanged(settings) {
  								console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+settings);
  								var px = settings;
  								console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! '+px);
-								 $( '.pp_pic_holder' ).css( "top", "auto");							 
-							};	
-                
-			});
-
+								 $( '.pp_pic_holder' ).css( "top", function( settings) {
+  																						return settings ;
+																					});
+								 
+							};
+			
+			
+			
+			
+			
+			
+			
 			
 		});
 		
