@@ -41,7 +41,7 @@
 	});
 			VK.addCallback("onScroll", onSettingsChanged1);
              	function onSettingsChanged1(settings) {
-							 			$('.height').height(settings);
+							 			$('.height1').height(settings);
 							 													
 										}; 
 	
@@ -133,11 +133,11 @@
 
         });
     </script>
-    <div>
+    <div class="height1">
         <img title="Жми :)" src="img/image.png" class="sms" />
         <!--<a class="b" href="/"></a>-->
     </div>
-    <div class="height"></div>
+    <div></div>
     <script>
         $('.sms').click(function () {
             swal({
@@ -193,7 +193,7 @@
                 changepicturecallback: function () {VK.addCallback("onScroll", onSettingsChanged);
              															function onSettingsChanged(settings) {
 							 													$( '.pp_pic_holder' ).css( "top", function( settings) {
-  																					var tt = $('.height').height();
+  																					var tt = $('.height1').height();
   																					return tt;
   									
 																						});
