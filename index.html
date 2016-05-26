@@ -37,7 +37,7 @@
 <script type="text/javascript" >
     VK.init(
   function(){
-   	VK.callMethod('scrollSubscribe');
+   	//VK.callMethod('scrollSubscribe');
 	});
 			 
 	
@@ -186,7 +186,9 @@
                 deeplinking: true, /* Allow prettyPhoto to update the url to enable deeplinking. */
                 overlay_gallery: true, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
                 keyboard_shortcuts: true, /* Set to false if you open forms inside prettyPhoto */
-                changepicturecallback: function () {VK.addCallback("onScroll", onSettingsChanged);
+                changepicturecallback: function () {
+                											VK.callMethod('scrollSubscribe');
+                											VK.addCallback("onScroll", onSettingsChanged);
              															function onSettingsChanged(settings) {
 							 													$('.pp_pic_holder').height(settings);
 							 													$( '.pp_pic_holder' ).css( "top", function( settings) {
