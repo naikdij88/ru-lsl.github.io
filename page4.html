@@ -11,8 +11,7 @@
         <div>	
 			<p class="kw00" >{{name_2}}</p>
 			<p class="ops">{{opesanie}}</p>
-			<p class="m55"><a href="https://wiki.secondlife.com/wiki/{{name}}?iframe=true&width=700&height=500" rel="prettyPhoto[iframes]" target="_blank" class="hr"  ><img src="img/wiki82.png" width="22" height="22" class="leftimg"><span class="kw01">wiki</span></a></p>	
-			
+			<p class="m55"><a href="//wiki.secondlife.com/wiki/{{name}}?iframe=true&width=700&height=500" rel="prettyPhoto[iframes]" class="hr" ><img src="img/wiki82.png" width="22" height="22" class="leftimg"><span class="kw01">wiki</span></a></p>	
 		</div>
 		{{url}}
 	{{/func}}
@@ -45,15 +44,14 @@ $(function(){
 			    var h = 600;
                 var w = 900;
                 //window.open(linkURL, "", 'scrollbars=1,height=' + Math.min(h, screen.availHeight) + ',width=' + Math.min(w, screen.availWidth) + ',left=' + Math.max(0, (screen.availWidth - w) / 2) + ',top=' + Math.max(0, (screen.availHeight - h) / 2));
-                $.prettyPhoto.open(linkURL, target, features);
-                
+                $.prettyPhoto.open(linkURL + '#content', target, features);    
+  
 			});
 
-			
+
 		});
 		
 });
-</script>
 
 
 
