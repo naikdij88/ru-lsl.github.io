@@ -290,5 +290,16 @@ body {
 .navbar-inverse {
     background-color: #222;
     border-color: #080808;
-    box-shadow: 0 5px 10px 0 rgba(0, 1, 0, 0.298039);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.298039);
+}
+
+.name-f {
+    text-align: center;
+    color: #4092d9;
+    /*text-shadow: 0 2px 5px 0 rgba(0, 1, 0, 0.298039);*/
+}
+
+.txtsh {
+    /*text-shadow: 0 20px 50px 0 rgba(0, 1, 0, 0.298039);*/
+    text-shadow: 1px 1px slateblue;
 }
