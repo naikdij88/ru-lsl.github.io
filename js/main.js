@@ -27,16 +27,22 @@ $(function() {
 
         });
 
+$(window).load(function() {
+    "use strict";
+    $(".cssload-thecube").fadeOut();
+    $("#preloader").fadeOut("slow");
+});
+
     });
 
 });
 
 /* Preloder 
 -------------------------------------------------------------------*/
-$(window).load(function() {
-    "use strict";
-    $(".cssload-thecube").fadeOut();
-    $("#preloader").fadeOut("slow");
-});
+// $(window).load(function() {
+//     "use strict";
+//     $(".cssload-thecube").fadeOut();
+//     $("#preloader").fadeOut("slow");
+// });
 /* Preloder End
 -------------------------------------------------------------------*/
