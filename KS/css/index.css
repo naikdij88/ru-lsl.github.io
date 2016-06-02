@@ -1,0 +1,231 @@
+﻿.group { zoom: 1 }
+
+#format { margin-top: 2em; }
+
+.hidden{
+    opacity:0;
+}
+.visible{
+    opacity:1;
+}
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 0px 5px 5px 0; /* Отступы вокруг картинки */
+}
+.rightimg {
+    float: right; /* Выравнивание по правому краю */
+    margin: 5px 0 5px 5px; /* Отступы вокруг картинки */
+}
+
+.kw01 {
+    color: #73acab;
+}
+.us{
+    color: #bc9562;
+    font-style: italic;
+}
+.kw00 {
+    color: #afb0b4;
+}
+.kw1 {
+    color: #0000ff;
+}
+.kw2 {
+    color: #000080;
+}
+.kw3 {
+    color: #008080;
+}
+ .kw4 {
+    color: #228b22;
+}
+.kw5 {
+    color: #b22222;
+}
+.kw6 {
+    background-color: #ffff00;
+    color: #8b0000;
+}
+.kw7 {
+    background-color: #fa8072;
+    color: #8b0000;
+}
+.kw8 {
+    background-color: #ba55d3;
+    color: #000000;
+}
+.fit{
+    font-style: italic;
+}
+.co1 {
+    color: #ff7f50;
+    font-style: italic;
+}
+.lsl2.source-lsl2 .es0 {
+    color: #000099;
+}
+.lsl2.source-lsl2 .br0 {
+    color: #000000;
+}
+.lsl2.source-lsl2 .sy0 {
+    color: #000000;
+}
+.st0 {
+    color: #006400;
+}
+.lsl2.source-lsl2 .nu0 {
+    color: #000000;
+}
+/* текст*/
+.x{
+    background-color: rgba(255, 255, 0, 0);
+    color: rgba(139, 0, 0, 0);
+}
+
+
+.nt{
+    padding: 20px;
+}
+.bgr{
+	
+  background: #EEE;
+}
+.bgt {
+  height: 100%;
+  background: gold;
+  border-radius: 0;
+  animation: background 10s infinite alternate;
+}
+
+.gray{
+	/*color: #CCFFFF;*/
+    color: #8b8be5;
+}
+.name_n{
+    color: rgba(183, 215, 161, 1.00);
+}
+.ops {
+    color: #2395d7;
+}
+body{
+	background:#000 url("images/ui-bg_loop_25_000000_21x21d.png") 50% 50% repeat;
+	color:#fff;
+}
+ui-widget-content{
+	border:1px solid #555;
+    background:#000 url("images/ui-bg_loop_25_000000_21x21.png") 50% 50% repeat;
+	color:#fff
+	}
+
+
+/*SVG*/
+.b {
+    width: 50px;
+    height: 32px;
+    
+    /*background-image : url(img/image.png);*/
+    background-image: url('../img/thumbs-up.jpg');
+    position: fixed; /* Фиксированное положение */
+    right: 2px;
+    top: 53.5%; /* Левый нижний угол */
+    padding: 0px; /* Поля вокруг текста */
+    border-radius: 3px;
+    border: 0px dashed #228b22;
+}
+.sms {
+    
+    background-color: #000080;
+    width: 50px;
+    height: 32px;
+    /*background-image : url(img/image.png);*/
+    background-size: 60px 42px;
+    position: fixed; /* Фиксированное положение */
+    left: 2px; top: 100px;  /*Левый нижний угол */
+    padding: 0px; /* Поля вокруг текста */
+    border-radius: 3px;
+    border: 0px dashed #228b22;
+}
+.sms { /* анимация */
+-webkit-transition-duration: 0.5s; 
+-o-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s; 
+transition-duration: 0.5s;
+}
+.sms:hover { /* цвет при наведении */
+background-color: #228b22;
+padding: 0px;
+border-radius: 3px;
+}
+/*SVG*/
+.jctx {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #595959;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 0;
+	opacity: 0;
+	-webkit-transition:opacity 200ms;
+    -moz-transition:opacity 200ms;
+    -o-transition:opacity 200ms;
+    -ms-transition:opacity 200ms;
+}
+
+.jctx-black {
+    background: black;
+    color: white;
+}
+
+.jctx-white {
+    background: white;
+    color: black;
+}
+
+.jctx-white-shadow {
+	box-shadow: 0 0 15px grey;
+}
+
+.jctx-black-shadow {
+	box-shadow: 0 0 15px black;
+}
+
+.jctx li {
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.jctx li.disabled {
+    color: darkgrey;
+	cursor: default;
+}
+
+.jctx-black li:hover {
+    background-color: #284160;
+}
+
+.jctx-white li:hover {
+    background-color: #81B2D6;
+}
+
+.jctx-black li.disabled:hover {
+    background-color: #202020;
+}
+
+.jctx-white li.disabled:hover {
+    background-color: lightgrey;
+}
+
+.jctx i {
+    padding-right: 6px
+}
+
+.jctx hr {
+    background-color: grey;
+    height: 1px;
+    border: 0;
+    margin: 2px 0px;
+}
