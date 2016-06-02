@@ -36,7 +36,7 @@ $(function() {
 $(window).load(function() {
     "use strict";
     //$(".cssload-thecube").fadeOut();
-    $("#preloader").fadeOut("slow");
+    $("#preloader").delay(350).fadeOut("slow");
 });
 /* Preloder End
 -------------------------------------------------------------------*/
