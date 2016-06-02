@@ -1,0 +1,37 @@
+dody {
+    margin: 0;
+}
+
+.bs-const {
+    background-color: gold;
+    height: 100%;
+    
+}
+
+.bs-const2 {
+    background-color: darkgoldenrod;
+    height: 100%;
+}
+
+.bs-col {
+    height: 100vh;
+    margin: 0px;
+}
+
+.bs-col:nth-child(odd) {
+    background-color: bisque;
+    margin: 0px;
+}
+
+.bs-col:nth-child(even) {
+    background-color: coral;
+    margin: 0px;
+}
+
+.scro {
+    max-height: 100%;
+}
+
+.hed {
+    margin: 0px;
+}
