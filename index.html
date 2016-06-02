@@ -41,38 +41,51 @@
                     <li>
                         <a></a>
                     </li>
-                    <li><a type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</a></li>
-                    <li><a href="#">Reports</a></li>
-                    <li><a href="#">Analytics</a></li>
-                    <li><a href="#">Export</a></li>
+                    <li><a type="button" class="btn btn-default collapse" data-toggle="collapse" data-target="#demo">Язык LSL</a></li>
+                    <div id="demo" class="collapse out">
+                        <ul class="nav nav-sidebar">
+                            <li class=" leftli"><a href="#">КОНСТАНТЫ</a></li>
+                            <li class=" leftli"><a href="#">СОБЫТИЯ</a></li>
+                            <li class=" leftli"><a href="#">ФУНКЦИИ</a></li>
+                            <li class=" leftli"><a href="#">Управление Потоком</a></li>
+                            <li class=" leftli"><a href="#">Операторы</a></li>
+                            <li class=" leftli"><a href="#">Состояние</a></li>
+                            <li class=" leftli"><a href="#">Типы</a></li>
+                            <li class=" leftli"><a href="#">Ошибки</a></li>
+                        </ul>
+                    </div>
                 </ul>
+
                 <ul class="nav nav-sidebar">
-                    <li><a href="">Nav item</a></li>
-                    <li><a href="">Nav item again</a></li>
-                    <li><a href="">One more nav</a></li>
-                    <li><a href="">Another nav item</a></li>
-                    <li><a href="">More navigation</a></li>
+                    <li><a type="button" class="btn btn-default collapse" data-toggle="collapse" data-target="#demo2">Константы</a></li>
+                    <div id="demo2" class="collapse out">
+                        <ul class="nav nav-sidebar">
+                            <li class="content-k leftli"></li>
+                        </ul>
+                    </div>
                 </ul>
+
                 <ul class="nav nav-sidebar">
-                    <li><a href="">Nav item again</a></li>
-                    <li><a href="">One more nav</a></li>
-                    <li><a href="">Another nav item</a></li>
+                    <li><a type="button" class="btn btn-default collapse" data-toggle="collapse" data-target="#demo3">События</a></li>
+                    <div id="demo3" class="collapse out">
+                        <ul class="nav nav-sidebar">
+                            <li class="content-e leftli"></li>
+                        </ul>
+                    </div>
                 </ul>
+
                 <ul class="nav nav-sidebar">
-                    <li><a href="">Nav item</a></li>
-                    <li><a href="">Nav item again</a></li>
-                    <li><a href="">One more nav</a></li>
-                    <li><a href="">Another nav item</a></li>
-                    <li><a href="">More navigation</a></li>
+                    <li><a type="button" class="btn btn-default collapse" data-toggle="collapse" data-target="#demo4">Функции</a></li>
+                    <div id="demo4" class="collapse out">
+                        <ul class="nav nav-sidebar">
+                            <li class="content-f leftli"></li>
+                        </ul>
+                    </div>
                 </ul>
-                <ul class="nav nav-sidebar">
-                    <li><a href="">Nav item again</a></li>
-                    <li><a href="">One more nav</a></li>
-                    <li><a href="">Another nav item</a></li>
-                </ul>
-                <li>
-                    <a></a>
-                </li>
+
+
+                <a></a>
+
             </div>
             <div class="col-sm-9 bs-col  pre-scrollable scro ">
 
@@ -331,7 +344,8 @@
                         </tbody>
                     </table>
                     <div><br/>
-                        <a>  </a><br/><a>  </a>
+                        <a> </a><br/>
+                        <a> </a>
                     </div>
                 </div>
 
@@ -353,8 +367,15 @@
         </form>-->
     <script src="js/jquery-2.2.3.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
-    <script>
-    </script>
+    <script src="js/mustache.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script id="const" type="text/html">{{#const}}<a href="#">{{name}}</a> {{/const}}</script>
+    <script id="event" type="text/html">{{#event}}<a href="#">{{name}}</a> {{/event}}</script>
+    <script id="func" type="text/html">{{#func}}<a href="#">{{name}}</a> {{/func}}</script>
+
+    <!--<script> 
+        
+    </script>-->
 </bodi>
 
 </html>
