@@ -65,3 +65,7 @@ body {
     color: #fff;
     background-color: #428bca;
 }
+
+.leftli {
+    left: 20px;
+}
