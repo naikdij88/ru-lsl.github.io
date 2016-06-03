@@ -156,42 +156,9 @@
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <script src="js/mustache.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-    <script id="const" type="text/html">{{#const}}<a class="hr-k" href="{{name}}">{{name}}</a> {{/const}}</script>
+    <script id="const" type="text/html">{{#cons}}<a class="hr-k" href="{{name}}">{{name}}</a> {{/cons}}</script>
     <script id="event" type="text/html">{{#event}}<a class="hr-e" href="{{name}}">{{name}}</a> {{/event}}</script>
     <script id="func" type="text/html">{{#func}}<a class="hr-f" href="{{name}}">{{name}}</a> {{/func}}</script>
-    <script id="const-f" type="text/html">
-        {{#func}}
-        <div class="name-f ">
-            <h2><span class="txtsh">{{name}}</span></h2>
-        </div>
-
-        <ul class="list-group material-list-group material-list-group">
-            <li class="list-group-item material-list-group__item">{{name_2}}</li>
-            <li class="list-group-item material-list-group__item">{{opesanie}}</li>
-        </ul>
-
-        <button class="btn material-btn material-btn_danger glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal_danger"> WIKI</button>
-        <div class="modal material-modal material-modal_danger fade" id="myModal_danger">
-            <div class="modal-dialog ">
-                <div class="modal-content material-modal__content">
-                    <div class="modal-header material-modal__header">
-                        <h4 class="modal-title material-modal__title">{{name}}</h4>
-                    </div>
-                    <div class="modal-body material-modal__body" style="padding: 0;">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://wiki.secondlife.com/wiki/{{name}}"></iframe>
-                        </div>
-                    </div>
-                    <div class="modal-footer material-modal__footer">
-                        <button class="btn material-btn " data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        {{/func}}
-    </script>
-
     <!--<script>
         
     </script>-->
