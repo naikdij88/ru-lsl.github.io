@@ -16,7 +16,7 @@ $(function() {
         var html = Mustache.render(template, data);
         $('.content-f').html(html);
 
-        $('.hr').click(function(e) {
+        $('.hr-f').click(function(e) {
             e.preventDefault(); // Предотвратить href от перенаправления напрямую
             var linkURL = $(this).attr("href");
             // $("#my_if").html("<iframe src="+linkURL+" width='100%' height='700' id='my_if1'></iframe>" );
