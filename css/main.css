@@ -303,3 +303,8 @@ body {
     /*text-shadow: 0 20px 50px 0 rgba(0, 1, 0, 0.298039);*/
     text-shadow: 1px 1px slateblue;
 }
+
+.cont-f {
+    background-color: rgba(0, 0, 0, 0.198039);
+    border-radius: 5px;
+}
