@@ -29,12 +29,17 @@ $(function() {
                     output += '<ul class="list-group material-list-group material-list-group">';
                     output += '<li class="list-group-item material-list-group__item">' + val.name_2 + '</li>';
                     output += '<li class="list-group-item material-list-group__item">' + val.opesanie + '</li></ul>';
-                    output += '';
-
+                    output += '<button class="btn material-btn material-btn_danger glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal_danger"> WIKI</button>';
+                    output += '<div class="modal material-modal material-modal_danger fade" id="myModal_danger"><div class="modal-dialog ">';
+                    output += '<div class="modal-content material-modal__content"><div class="modal-header material-modal__header">';
+                    output += '<h4 class="modal-title material-modal__title">' + val.name + '</h4></div>';
+                    output += '<div class="modal-body material-modal__body" style="padding: 0;"><div class="embed-responsive embed-responsive-16by9">';
+                    output += '<iframe class="embed-responsive-item" src="https://wiki.secondlife.com/wiki/' + val.name + '"></iframe></div></div>';
+                    output += '<div class="modal-footer material-modal__footer"><button class="btn material-btn " data-dismiss="modal">Close</button>';
 
                 }
             });
-            output += '';
+            output += '</div></div></div></div>';
             $('.update').html(output);
 
         });
