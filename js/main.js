@@ -19,11 +19,23 @@ $(function() {
         $('.hr-f').click(function(e) {
             e.preventDefault(); // Предотвратить href от перенаправления напрямую
             var linkURL = $(this).attr("href");
-            // $("#my_if").html("<iframe src="+linkURL+" width='100%' height='700' id='my_if1'></iframe>" );
-            alert(linkURL);
-            //var h = 600;
-            //var w = 900;
-            //window.open("https://wiki.secondlife.com/wiki/" + linkURL, "", 'scrollbars=1,height=' + Math.min(h, screen.availHeight) + ',width=' + Math.min(w, screen.availWidth) + ',left=' + Math.max(0, (screen.availWidth - w) / 2) + ',top=' + Math.max(0, (screen.availHeight - h) / 2));
+
+            var myExp = new RegExp(linkURL, "i");
+            var output = '';
+            $.each(data.func, function(key, val) {
+                if (val.name.search(myExp) != -1) {
+                    output += '<div class="name-f ">';
+                    output += '<h2><span class="txtsh">' + val.name + '</span></h2></div>';
+                    output += '<ul class="list-group material-list-group material-list-group">';
+                    output += '<li class="list-group-item material-list-group__item">' + val.name_2 + '</li>';
+                    output += '<li class="list-group-item material-list-group__item">' + val.opesanie + '</li></ul>';
+                    output += '';
+
+
+                }
+            });
+            output += '';
+            $('.update').html(output);
 
         });
 
@@ -36,7 +48,7 @@ $(function() {
 $(window).load(function() {
     "use strict";
     //$(".cssload-thecube").fadeOut();
-    $("#preloader").delay(2000).fadeOut("slow");
+    $("#preloader").delay(0).fadeOut("slow");
 });
 /* Preloder End
 -------------------------------------------------------------------*/

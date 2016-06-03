@@ -1,1222 +1,1020 @@
-{"func" : [
-         {
-		  "name" : "llAbs",
-		  "name_2" : "integer llAbs(integer val);",
-		  "opesanie" : "Возвращает абсолютное число",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAcos",
-		  "name_2" : "float llAcos(float val);",
-		  "opesanie" : "Возвращает арккосинус числа",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAddToLandPassList",
-		  "name_2" : "llAddToLandPassList(key avatar, float hours);",
-		  "opesanie" : "Добавить аватара avatar к пропускному списку Этой земли на время hours",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAdjustSoundVolume",
-		  "name_2" : "llAdjustSoundVolume(float volume);",
-		  "opesanie" : "Настроить громкость проигрывания звука прикрепленного к обьекту с этим скриптом и запущенного с помощью llPlaySound или llLoopSound. Эта функция не дает эффекта если не установлен тригер звука с помошью функции llTriggerSound",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAllowInventoryDrop",
-		  "name_2" : "llAllowInventoryDrop(integer add);",
-		  "opesanie" : "Если add = TRUE, юзер не сможет модифицировать права доступа для выбрасывания из инвентаря ",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAngleBetween",
-		  "name_2" : "float llAngleBetween(rotation a, rotation b);",
-		  "opesanie" : "Возвращает угол в радианах между поворотами a и b.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llApplyImpulse",
-		  "name_2" : "llApplyImpulse(vector force, integer local);",
-		  "opesanie" : "Применить импульс force к локальной системе координат local если local = TRUE. Иначе приложенный импульс будет приложен к глобальной системе координат. Эта функция работает только с физическими обьектами.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llApplyRotationalImpulse",
-		  "name_2" : "llApplyRotationalImpulse(vector force, integer local);",
-		  "opesanie" : "Задать импульс вращения force к системе координат local если local = TRUE. Иначе приложенный импульс будет приложен к глобальной системе координат. Эта функция работает только с физическими обьектами.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAsin",
-		  "name_2" : "float llAsin(float val);",
-		  "opesanie" : "Возвращает арксинус в радианах",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAtan2",
-		  "name_2" : "float llAtan2(float y, float x);",
-		  "opesanie" : "Возвращает arctangent2 из y, x",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAttachToAvatar",
-		  "name_2" : "llAttachToAvatar(key avatar, integer attachment);",
-		  "opesanie" : "Прикрепить к аватару в точку attachment. Требуется PERMISSION_ATTACH разрешение аватара на выполнения данной функции.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAvatarOnSitTarget",
-		  "name_2" : "key llAvatarOnSitTarget(void);",
-		  "opesanie" : "Если аватар сидит на обьекте предназначенном для сидения , возврашается ключ аватара, иначе возвращается NULL_KEY. Это единственная возможность обнаружить сидит ли аватар на обьекте определенном с помощью функции llSitTarget для сидения.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAxes2Rot",
-		  "name_2" : "rotation llAxes2Rot(vector fwd, vector left, vector up);",
-		  "opesanie" : "Возвращает свойства вращение обьекта , представленное в осевых координатах. Возвращает поворот системы заданной тремя координатами.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llAxisAngle2Rot",
-		  "name_2" : "rotation llAxisAngle2Rot(vector axis, float angle);",
-		  "opesanie" : "Возвращает поворот rotation сгенерированный по углу angle на оси axis.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llBase64ToString",
-		  "name_2" : "string llBase64ToString(string str);",
-		  "opesanie" : "Конвертирует строку Base 64 string в обычную строку. Если преабразование создает непонятный символ то функция конвертирует его в пробел.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llBreakAllLinks",
-		  "name_2" : "llBreakAllLinks(void);",
-		  "opesanie" : "Разорвать связь всех обьектов в установленной связи(залинкованых или обьединеных в оди составной). Требует получения PERMISSION_CHANGE_LINKS разрешения.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llBreakLink",
-		  "name_2" : "llBreakLink(integer linknum);",
-		  "opesanie" : "Разорвать связь с сгрупированным(залинкованным) обьектом linknum. Требует получения PERMISSION_CHANGE_LINKS разрешения после которого у нас будет право на разгрупировку.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llCSV2List",
-		  "name_2" : "list llCSV2List(string src);",
-		  "opesanie" : "Создать список list из строки srс , данные в которой перечисляются через запятую.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llCeil",
-		  "name_2" : "integer llCeil(float val);",
-		  "opesanie" : "Возвращает наибольшее integer значение >= val.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llCloseRemoteDataChannel",
-		  "name_2" : "llCloseRemoteDataChannel",
-		  "opesanie" : "Закрывает XML-RPC канал открытый с помощью функции llOpenRemoteDataChannel .",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llCloud",
-		  "name_2" : "float llCloud(vector offset);",
-		  "opesanie" : "Возвращает плотность облака по текущим координатам смещенным на вектор offset .",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llCollisionFilter",
-		  "name_2" : "llCollisionFilter(string name, key id, integer accept);",
-		  "opesanie" : "Если допуск accept == TRUE, допускается только столкновение с обьектом name и id , иначе с обьектом без имени name или id. Спецификаторы могут принимать любую последовательность или NULL_KEY если не нужен фильтр на передачу параметра.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llCollisionSound",
-		  "name_2" : "llCollisionSound(string impact_sound, float impact_volume);",
-		  "opesanie" : "Выключить звук столкновения по умолчанию, и заменить звуком удара с impact_sound находящимся в object inventory.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llCollisionSprite",
-		  "name_2" : "llCollisionSprite(string impact_sprite);",
-		  "opesanie" : "Запретить появление спрайта при столкновения установленный по умолчанию, заменить толчковый спрайт на установленный по умолчанию impact_sprite из инвентаря обьекта. Только запретить спрайт столкновения установленный по умолчанию если строка пуста.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llCos",
-		  "name_2" : "float llCos(float theta);",
-		  "opesanie" : "Возвращает косинус угла theta в заданного в радианах",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llCreateLink",
-		  "name_2" : "llCreateLink(key target, integer parent);",
-		  "opesanie" : "Создает связь(линк) обьекта с другим обектом по его ключу target. Требуется получить разрешение PERMISSION_CHANGE_LINKS . Если параметр parent = TRUE , то обьект прикрепится к корневому обьекту.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDeleteSubList",
-		  "name_2" : "list llDeleteSubList(list src, integer start, integer end);",
-		  "opesanie" : "Удаляет елементы из списка src начиная с позиции start и заканчивая позицией end. Если промежуток между конечной и начальной позицией равен 0,-1 то удалится весь список, если 0,0 то удалится первый элемент , если напимер нач позиция больше конечной то удалится все (включая и позиции старта и конца)кроме того что было межу этими позициями.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDeleteSubString",
-		  "name_2" : "string llDeleteSubString(string src, integer start, integer end);",
-		  "opesanie" : "Удаляет елементы из строки src начиная с позиции start и заканчивая позицией end. Если промежуток между конечной и начальной позицией равен 0,-1 то удалится все символы, если 0,0 то удалится первый символ , если напимер нач позиция больше конечной то удалится все (включая и позиции старта и конца)кроме того что было межу этими позициями.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetachFromAvatar",
-		  "name_2" : "llDetachFromAvatar(key avatar);",
-		  "opesanie" : "Отсоединяет от автара присоединеную к нему вещь содержащую этот срипт с этой функцией по его ID.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetectedGrab",
-		  "name_2" : "vector llDetectedGrab(integer number);",
-		  "opesanie" : "Возвращает вектор мгновенного движения обнаруженного обьекта по его номеру обнаружения. (не ID) . Возвращает <0,0,0> если номер не действительный.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetectedGroup",
-		  "name_2" : "integer llDetectedGroup(integer number);",
-		  "opesanie" : "Возвращает TRUE если обнаруженный обьект number это участник группы владельца этого скрипта.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetectedKey",
-		  "name_2" : "key llDetectedKey(integer number);",
-		  "opesanie" : "Возвращает ключ обнаруженного обьекта по его номеру обнаружения(маркеру) number. Возвращает NULL_KEY если номер не действительный.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetectedLinkNumber",
-		  "name_2" : "integer llDetectedLinkNumber(integer number);",
-		  "opesanie" : "Возвращает номер обьединеного(залинкованного) обьекта по которобу было произведено нажатие и в результате чего было запущенно touches событие. 0 - если обьект не залинкован(необнаружен), 1 - если корневой обьект, 2,3,4... и т.д. - если обьект дочерний .",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetectedName",
-		  "name_2" : "string llDetectedName(integer number);",
-		  "opesanie" : "Возвращает имя по номеру обнаружения number обьекта. Возвращает пустую строку если номер не действительный и не совпадает с обнаруженными обьтектами.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetectedOwner",
-		  "name_2" : "key llDetectedOwner(integer number);",
-		  "opesanie" : "Возвращает ключ обнаруженного обьекта владельца по номеру обнаружения number. Возвращает NULL_KEY если номер недействительный.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetectedPos",
-		  "name_2" : "vector llDetectedPos(integer number);",
-		  "opesanie" : "Возвращает положение обнаруженного обьекта по его номеру обнаружения number .Возвращает <0,0,0> если number недействительный.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetectedRot",
-		  "name_2" : "rotation llDetectedRot(integer number);",
-		  "opesanie" : "Возвращает поворот обнаруженного обьекта по его номеру обнаружения number .Возвращает <0,0,0,1> если number недействительный.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetectedType",
-		  "name_2" : "integer llDetectedType(integer number);",
-		  "opesanie" : "Возвращает тип обнаруженного обьекта по его номеру обнаружения(маркеру) number . Тип является битовым полем содержащим в себе одну или несколько констант (AGENT, ACTIVE, PASSIVE, SCRIPTED). Возвращает 0 если указанный маркер number недействительный(т.е. Указан маркер несуществующего обьекта).",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDetectedVel",
-		  "name_2" : "vector llDetectedVel(integer number);",
-		  "opesanie" : "Возвращает вектор скорости обнаруженного обьекта по его номеру обнаружения(маркеру) number .Возвращает <0,0,0> если number недействительный.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDialog",
-		  "name_2" : "llDialog(key avatar, string message, list buttons, integer channel);",
-		  "opesanie" : "Открывает 'бокс сообщения' в верхнем правом углу для данного аватара и выводит на экран сообщение. В сообщение может входить до 12 кнопок которые определяются в списке buttons. Когда аватар нажимает на кнопку имя кнопки передается по определенному каналу channel. Каналы используются такиеже как функцией llSay(), таким образом канал 0 может быть услышан каждым если он находится рядом так как это общественный канал.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDie",
-		  "name_2" : "llDie(void);",
-		  "opesanie" : "Удалить обьект содержащий этот скрипт.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llDumpList2String",
-		  "name_2" : "string llDumpList2String(list src, string separator);",
-		  "opesanie" : "Создает строку из списка SRC используя SEPARATOR как разделитель элементов списка в строке",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llEscapeURL",
-		  "name_2" : "string llEscapeURL(string url);",
-		  "opesanie" : "Возвращает строку преобразованную в строку из escape кодов, например ( '' )прямые ковычки преобразуются вот в такую последовательность .Экономит 20% пространства.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llEdgeOfWorld",
-		  "name_2" : "integer llEdgeOfWorld(vector pos, vector dir);",
-		  "opesanie" : "Возвращает TRUE если линия от начальных координат pos до конечных координат dir выходит за края текущего сима (земли ) . Возвращает FALSE если концы линии находятся за пределами сима.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llEjectFromLand",
-		  "name_2" : "llEjectFromLand(key pest);",
-		  "opesanie" : "Выбросить вредителя pest с земельной собственности по его ключу.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llEmail",
-		  "name_2" : "llEmail(string address, string subject, string message);",
-		  "opesanie" : "Послать email по адрессу address от субьекта subject и сообщение message.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llEuler2Rot",
-		  "name_2" : "rotation llEuler2Rot(vector vec);",
-		  "opesanie" : "Возвращает поворот представленный в системе Эйлера vec.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llFabs",
-		  "name_2" : "float llFabs(float val);",
-		  "opesanie" : "Возвращает абсолютное значение числа val.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llFloor",
-		  "name_2" : "integer llFloor(float val);",
-		  "opesanie" : "Возвращает наибольшее integer значение <= val.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llFrand",
-		  "name_2" : "float llFrand(float mag);",
-		  "opesanie" : "Возвращает случайное число в диапазоне [0, mag).",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetAccel",
-		  "name_2" : "vector llGetAccel(void);",
-		  "opesanie" : "Получает ускорение.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetAttached",
-		  "name_2" : "integer llGetAttached(void);",
-		  "opesanie" : "Возвращает точку крепления обьекта к аватару или возвращает 0 если обьект не прикреплен.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetAgentInfo",
-		  "name_2" : "integer llGetAgentInfo(key id);",
-		  "opesanie" : "Возвращает информацию о данном агенте по его ID. Возвращает в виде битового поля которое можно прочитать с помощью констант agent info constants.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetAgentSize",
-		  "name_2" : "vector llGetAgentSize(key id);",
-		  "opesanie" : "Если ключ id агента находится в этомже симе что и обьект с этим скриптом, возвращает размер аватара.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetAlpha",
-		  "name_2" : "float llGetAlpha(integer face);",
-		  "opesanie" : "Возвращает коофициент прозрачности alpha данной стороны face. Если сторона face является ALL_SIDES возвращает значение среднего числа альфы всех сторон.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetAndResetTime",
-		  "name_2" : "float llGetAndResetTime(void);",
-		  "opesanie" : "Возвращает в секундах продолжительность во внутренем хронометре скрипта. Таймер сбрасывается в ноль при вызове этой функции. Таймер также сбрасывает on rez, симулятор перезапускается , скрипт сбрасывается , и вызывается функция llResetTime. Выберите функцию llSetTimerEvent если вы хотите надежный механизм выбора времени.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetAnimation",
-		  "name_2" : "string llGetAnimation(key id);",
-		  "opesanie" : "Возвращает имя анимации происхдящей в данное с аватаром по его ID.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetAnimationList",
-		  "name_2" : "list llGetAnimationList(key id);",
-		  "opesanie" : "Возвращает список анимаций аватара происхдящих в данное время по его ID.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetBoundingBox",
-		  "name_2" : "list llGetBoundingBox(key object);",
-		  "opesanie" : "Возвращает ограничивающий прямоугольник вокруг обьекта object (включающий любой соединеный примитив) по отношению к корневому примитиву. Возвращает значение в списке list в форме : [ (vector) min_corner, (vector) max_corner ]",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetCenterOfMass",
-		  "name_2" : "vector llGetCenterOfMass(void);",
-		  "opesanie" : "Возвращает центр массы коренного обьекта.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetColor",
-		  "name_2" : "vector llGetColor(integer face);",
-		  "opesanie" : "Возвращает цвет данной стороны face. Если сторона face является ALL_SIDES возвращает среднее значение каждого цветового канала.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetCreator",
-		  "name_2" : "key llGetCreator(void);",
-		  "opesanie" : "Возвращает ключ создателя обьекта который имеет этот скрипт.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetDate",
-		  "name_2" : "string llGetDate(void);",
-		  "opesanie" : "Возвращает текущую UTC(универсальную) дату в виде --- YYYY-MM-DD.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetEnergy",
-		  "name_2" : "float llGetEnergy(void);",
-		  "opesanie" : "Возвращает энергию обьекта как процент от максимума.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetForce",
-		  "name_2" : "vector llGetForce(void);",
-		  "opesanie" : "Возвращает поток силы если скрипт физический.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetFreeMemory",
-		  "name_2" : "integer llGetFreeMemory(void);",
-		  "opesanie" : "Возвращает доступное пространство скриптового потока(т.е. Оставшуюся свободную память которую может использовать текущий скрипт).",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetGeometricCenter",
-		  "name_2" : "vector llGetGeometricCenter(void);",
-		  "opesanie" : "Возвращает геометрический центр сгрупированных(залинкованых) и прикрепленных к аватару обьектов.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetGMTclock",
-		  "name_2" : "float llGetGMTclock(void);",
-		  "opesanie" : "Возвращает время в секундах начиная с GMT полночи.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetInventoryCreator",
-		  "name_2" : "key llGetInventoryCreator(string name);",
-		  "opesanie" : "Возвращает ключ(идентификатор) создателя обьекта name находящегося в личном инвентаре текущего обьекта.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetInventoryKey",
-		  "name_2" : "key llGetInventoryKey(string name);",
-		  "opesanie" : "Возвращает ключ по заданному имени name записи(или обьекта) в личном инвентаре текущего обьекта.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetInventoryName",
-		  "name_2" : "string llGetInventoryName(integer type, integer number);",
-		  "opesanie" : "Получает имя записи в личном инвентаре текущего обьекта по заданому порядковому номеру number и типу type. Выбери константу inventory constants для точного определения типа type.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetInventoryNumber",
-		  "name_2" : "integer llGetInventoryNumber(integer type);",
-		  "opesanie" : "Получает количество записей в личном инвентаре текущего обьекта по заданому типу type. Выбери константу inventory constants для точного определения типа type.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetInventoryPermMask",
-		  "name_2" : "integer llGetInventoryPermMask(string item, integer mask);",
-		  "opesanie" : "Возвращает ответ на запрос о разрешение mask на использование обьекта для указанного обьекта в инвентаре. Ответ возвращается в виде битовых констант Permission Mask Constants по которым можно определить какие разрешения доступны для пользователя.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetInventoryType",
-		  "name_2" : "integer llGetInventoryType(string name);",
-		  "opesanie" : "Возвращает тип обьекта name находящегося в инвентаре обьекта. Константа INVENTORY_NONE возвращается если в инвентаре не было найдено обьекта по имени name. Выбери константу inventory constants для сравнения с возвращенными функцией данными.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetKey",
-		  "name_2" : "key llGetKey(void);",
-		  "opesanie" : "Получить ключ(идентификатор) обьекта с этим скриптом.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetLandOwnerAt",
-		  "name_2" : "key llGetLandOwnerAt(vector pos);",
-		  "opesanie" : "Возвращает ключ владельца земли в точке этой земли pos или NULL_KEY если земля общественная.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetLinkKey",
-		  "name_2" : "key llGetLinkKey(integer linknum);",
-		  "opesanie" : "Возвращает ключ обьединеного (залинкованного) обьекта по его порядковому номеру linknum . 0 -если не залинкован 1-если корневой 2- если дочерний. И т.д.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetLinkName",
-		  "name_2" : "string llGetLinkName(integer linknum);",
-		  "opesanie" : "Возвращает имя обьединеного (залинкованного) обьекта по его порядковому номеру linknum . 0 -если не залинкован 1-если корневой 2- если дочерний. И т.д.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetLinkNumber",
-		  "name_2" : "integer llGetLinkNumber(void);",
-		  "opesanie" : "Возвращает личный порядковый номер обьекта который обьединен с другими обьектами(залинкован) . 0 -если не залинкован 1-если корневой 2- если дочерний. И т.д.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetListEntryType",
-		  "name_2" : "integer llGetListEntryType(list src, integer index);",
-		  "opesanie" : "Возвращает тип type переменной по индексу index в списке src.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetListLength",
-		  "name_2" : "integer llGetListLength(list src);",
-		  "opesanie" : "Возвращает количество элементов в списке src.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetLocalPos",
-		  "name_2" : "vector llGetLocalPos(void);",
-		  "opesanie" : "Возвращает локальную позицию обьекта относительно корневого обьекта .",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetLocalRot",
-		  "name_2" : "rotation llGetLocalRot(void);",
-		  "opesanie" : "Возвращает локальный угол поворота обьекта относительно корневого обьекта.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetMass",
-		  "name_2" : "float llGetMass(void);",
-		  "opesanie" : "Возвращает массу обьекта в киллограммах. Многие материалы в SL немного меньшей плотности чем в жизни , таким образом возвращается масса немного меньше чем вы можете представить.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetObjectMass",
-		  "name_2" : "float llGetObjectMass(key id);",
-		  "opesanie" : "Возвращает массу обьекта в киллограммах по его идентификатору ID. Многие материалы в SL немного меньшей плотности чем в жизни , таким образом возвращается масса немного меньше чем вы можете представить.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetNextEmail",
-		  "name_2" : "llGetNextEmail(string address, string subject);",
-		  "opesanie" : "Получает следующий ожидаемый емайл с соответствующего адреса address и/или от соответствующего субьекта subject. Если параметры не заданы то данные не будут отфильтрованы и поступит первый попавшийся емайл.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetNotecardLine",
-		  "name_2" : "key llGetNotecardLine(string name, integer line);",
-		  "opesanie" : "Эта функция по номеру строки line блокнота name получает содержимое одной строки через dataserver событие . Нумерация строк начинается с нуля. Если линия запроса подошла к концу блокнота dataserver событие вернет константу EOF string. Ключ возвращенный этой функцией это идетификатор который будет передаваатся dataserver событию в requested параметре.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetNumberOfNotecardLines",
-		  "name_2" : "key llGetNumberOfNotecardLines(string name);",
-		  "opesanie" : "Эта функция подсчитывает количество строк блокнота name (находящегося в инвентаре обьекта) и возвращает их количество через dataserver событие . Ключ возвращенный этой функцией это идетификатор который будет передаваатся dataserver событию в requested параметре , его можно использовать для сверки - на какой запрос был получен ответ.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetNumberOfPrims",
-		  "name_2" : "integer llGetNumberOfPrims(void);",
-		  "opesanie" : "Возвращает количество примитивов в сгрупированном(залинкованном или составном) обьекте .",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetNumberOfSides",
-		  "name_2" : "integer llGetNumberOfSides(void);",
-		  "opesanie" : "Возвращает количество сторон(граней) обьекта который содержит этот скрипт.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetObjectDesc",
-		  "name_2" : "string llGetObjectDesc(void);",
-		  "opesanie" : "Возвращает дескриптор (описание такоеже примерно как name) обьекта который содержит этот скрипт.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetObjectName",
-		  "name_2" : "string llGetObjectName(void);",
-		  "opesanie" : "Возвращает имя обьекта который содержит этот скрипт.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetObjectPermMask",
-		  "name_2" : "integer llGetObjectPermMask(integer mask);",
-		  "opesanie" : "Возвращает ответ на запрос о разрешении маски mask для прикрепления корневого обьекта . Смотри Permission Mask Constants для большей информации. Возвращаемое значение является битовым полем.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetOmega",
-		  "name_2" : "vector llGetOmega(void);",
-		  "opesanie" : "Возвращает омегу - Скорость вращения по трем осям.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetOwner",
-		  "name_2" : "key llGetOwner(void);",
-		  "opesanie" : "Возвращает ключ(идетификатор) владельца обьекта (владелец это не тоже самое что создатель владелец это тот аватар который имеет текущий предмет у себя в инвентаре).",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetOwnerKey",
-		  "name_2" : "key llGetOwnerKey(key id);",
-		  "opesanie" : "Возвращает ключ(идентификатор) владельца обьекта по id(идентификатору) этого обьекта.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetPermissions",
-		  "name_2" : "integer llGetPermissions(void);",
-		  "opesanie" : "Возвращает информацию о том какие права permissions были разрешены(выданны) . Возвращаемое значение является битовым полем (тоесть может содержать множественный ответ каждый из которых сверяется с константой).",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetPermissionsKey",
-		  "name_2" : "key llGetPermissionsKey(void);",
-		  "opesanie" : "Возвращает ключ аватара если для него разрешены права (у нешо есть право). Возвращает NULL_KEY если нет разрешения.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetPos",
-		  "name_2" : "vector llGetPos(void);",
-		  "opesanie" : "Возвращает позицию обьекта в глобальных координатах сима(острова).",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetPrimitiveParams",
-		  "name_2" : "list llGetPrimitiveParams(list parameters);",
-		  "opesanie" : "Эта функция получает список установленых параметров текущего примитива. В списке parameters используются константы Primitive Constants обозначающие имя каждого параметра.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetRegionCorner",
-		  "name_2" : "llGetRegionCorner(void);",
-		  "opesanie" : "Возвращает вектор юго-западного угла текущего региона.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetRegionFPS",
-		  "name_2" : "llGetRegionFPS(void);",
-		  "opesanie" : "Возвращает среднюю частоту кадров в текущем регионе (тоесть возвращает FPS текущего сима).",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetRegionName",
-		  "name_2" : "string llGetRegionName(void);",
-		  "opesanie" : "Возвращает имя текущего региона.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetRegionTimeDilation",
-		  "name_2" : "float llGetRegionTimeDilation(void);",
-		  "opesanie" : "Возвращает текущее расширенное время в виде числа в промежутке от 0 до 1.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetRootPosition",
-		  "name_2" : "vector llGetRootPosition(void);",
-		  "opesanie" : "Возвращает глобальное положение коренного обьекта из прикрепленного(залинкованного) к нему обьекта в котором находится этот скрипт.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetRootRotation",
-		  "name_2" : "rotation llGetRootRotation(void);",
-		  "opesanie" : "Возвращает глобальное поворот коренного обьекта из прикрепленного(залинкованного) к нему обьекта в котором находится этот скрипт.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetRot",
-		  "name_2" : "rotation llGetRot(void);",
-		  "opesanie" : "Возвращает поворот обьекта с этим скриптом.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetScale",
-		  "name_2" : "vector llGetScale(void);",
-		  "opesanie" : "Возвращает масштаб обьекта с этим скриптом.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetScriptName",
-		  "name_2" : "string llGetScriptName(void);",
-		  "opesanie" : "Возвращает имя текущего скрипта.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetStartParameter",
-		  "name_2" : "integer llGetStartParameter(void);",
-		  "opesanie" : "Возвращает стартовые параметры переданные при вызове функций llRezObject или llRezAtRoot. Если обьект создан из инвентаря агента, то эта функция возвращает 0.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetScriptState",
-		  "name_2" : "integer llGetScriptState(string name);",
-		  "opesanie" : "Установить Rest TRUE если скипт name запущен.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetStatus",
-		  "name_2" : "integer llGetStatus(integer status);",
-		  "opesanie" : "Возвращает значение статуса status. Единственное значение будет в виде константы status constants. С помощью этой функции можно получить такие данные об оьекте как: физический обьект или нет, является ли обьект фантомом, по каким осям заблокирован поворот обьекта, можно ли его передвигать с помощью курсора мышки «Рука» и т.д.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetSubString",
-		  "name_2" : "string llGetSubString(string src, integer start, integer end);",
-		  "opesanie" : "Возвращает часть строки src начиная от стартовой позиции start до конечной end, таким образом 0, 1 длина захватывает всю строку и 0,0 захватывает первый символ. Использование отрицательного номера start и/или end подсчитывает в обратном направлении в результате 0,-1 захватывает всю строку. Если start больше end то захватится вся строка за исключением символов в диапазоне от start до end. Например 6,4 захватит всю строку кроме 5 символов.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetSunDirection",
-		  "name_2" : "vector llGetSunDirection(void);",
-		  "opesanie" : "Возвращает вектор направления солнца всимуляторе.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetTexture",
-		  "name_2" : "string llGetTexture(integer face);",
-		  "opesanie" : "Возвращает имя текстуры с заданой стороны обьекта если такая тектстура присутствует в инвентаре обьекта",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetTextureOffset",
-		  "name_2" : "vector llGetTextureOffset(integer side);",
-		  "opesanie" : "Возвращает смещение текстуры на стороне обьекта side в X и Y компонентах вектора.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetTextureRot",
-		  "name_2" : "float llGetTextureRot(integer side);",
-		  "opesanie" : "Возвращает поворот текстуры на стороне side.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetTextureScale",
-		  "name_2" : "vector llGetTextureScale(integer side);",
-		  "opesanie" : "Возвращает маштаб текстуры на стороне side в X и Y компонентах вектора.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetTime",
-		  "name_2" : "float llGetTime(void);",
-		  "opesanie" : "Возвращает второе астрономическое время из внутреннего таймера связанного со скриптом. Таймер сбрасывается on rez, симулятор перестартовывает, скрипт сбрасывается, и в вызове llGetAndResetTime или llResetTime. Выбераем llSetTimerEvent если вы хотите надежный временной механизм.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetTimeOfDay",
-		  "name_2" : "float llGetTimeOfDay(void);",
-		  "opesanie" : "Получить времяв секундах осчитывая с полночи в SECOND LIFE.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetTimestamp",
-		  "name_2" : "string llGetTimestamp(void);",
-		  "opesanie" : "Получить время в формате : YYYY-MM-DDThh:mm:ss.ff..fZ.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetTorque",
-		  "name_2" : "vector llGetTorque(void);",
-		  "opesanie" : "Получить момент вращения если скрипт физический.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetVel",
-		  "name_2" : "vector llGetVel();",
-		  "opesanie" : "Возвращает скорость.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGetWallclock",
-		  "name_2" : "float llGetWallclock(void);",
-		  "opesanie" : "Возвращает время в секундах с тех пор как в симуляторе наступила полночь. В настоящее время это PST.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGiveInventory",
-		  "name_2" : "llGiveInventory(key destination, string inventory);",
-		  "opesanie" : "Выдать деталь из инвентаря inventory Аватару или обьекту ключ которого указан в destination. Если получатель является Аватаром, тогда аватар после этого следует нормальной процедуре принятия или отказа от предложения. Если получатель является какимлибо обьектом то права доступа будут применятся как будто это были вы и перемещали в инвентаре обьекты вручную, если функция llAllowInventoryDrop была вызвана с TRUE параметрами любой другой обьект может быть пропущен в инвентарь.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGiveInventoryList",
-		  "name_2" : "llGiveInventoryList(key destination, string category, list inventory);",
-		  "opesanie" : "Выдать указанный перечень деталей из инвентаря аватару или обьекту ключ которого destination в томже симуляторе где находится обьект у которого это берут. Если получатель является аватаром, то он после этого следует нормальной процедуре принятия или отказа от предложения. Предложенный инвентарь после этого помещяется в папку названную category в инвентаре получателя. Если получатель является любым обьектом то к нему применяются права также как если бы это были вы и перемещали в инвентаре обьекты вручную, если llAllowInventoryDrop была вызвана с TRUE параметрами любой другой обьект может быть пропущен в инвентарь.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGiveMoney",
-		  "name_2" : "llGiveMoney(key destination, integer amount);",
-		  "opesanie" : "Передает сумму amount с помощью скрипта владельца в пункту назначения destination . Это вызов не будет успешным если не был установленно разрешение PERMISSION_DEBIT",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGround",
-		  "name_2" : "float llGround(vector offset);",
-		  "opesanie" : "Возвращает высоту земли по кординатам обьекта со смещение координат offset",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGroundContour",
-		  "name_2" : "vector llGroundContour(vector offset);",
-		  "opesanie" : "Возвращает контур земли по кординатам обьекта со смещение координат offset",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGroundNormal",
-		  "name_2" : "vector llGroundNormal(vector offset);",
-		  "opesanie" : "Возвращает вектор нормалей земли по кординатам обьекта со смещение координат offset",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGroundRepel",
-		  "name_2" : "llGroundRepel(float height, integer water, float tau);",
-		  "opesanie" : "Критическая аммортизация(тормоз) по высоте height , если высота в пределах height * 0.5 уровня. Height выше уровня земли вода water - FALSE , или выше уровня земли и вода если water - TRUE",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llGroundSlope",
-		  "name_2" : "vector llGroundSlope(vector offset);",
-		  "opesanie" : "Возвращает уклон земли под позицией обьекта со смещением offset",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llInsertString",
-		  "name_2" : "string llInsertString(string dst, integer position, string src);",
-		  "opesanie" : "Вставить строку src в строку dst на позицию position и вернуть результат.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llInstantMessage",
-		  "name_2" : "llInstantMessage(key user, string message);",
-		  "opesanie" : "Послать сообщение message юзеру(по ключу) user согласно мнгновенному сообщению.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llKey2Name",
-		  "name_2" : "string llKey2Name(key id);",
-		  "opesanie" : "Если обьект с этим ID находится в этомже симуляторе(територии), возвращается имя обьекта.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llList2CSV",
-		  "name_2" : "string llList2CSV(list src);",
-		  "opesanie" : "Создает строку отделенную запятыми со значениями из списка src.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llList2Float",
-		  "name_2" : "float llList2Float(list src, integer index);",
-		  "opesanie" : "Возвращает значение с плав точкой float по индексу index из списка src.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llList2Integer",
-		  "name_2" : "integer llList2Integer(list src, integer index);",
-		  "opesanie" : "Возвращает целое integer по индексу index из списка src.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llList2Key",
-		  "name_2" : "key llList2Key(list src, integer index);",
-		  "opesanie" : "Возвращает ключ key по индексу index из списка src.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "llList2List",
-		  "name_2" : "list llList2List(list src, integer start, integer end);",
-		  "opesanie" : "Возвращает новый список как часть списка от стартовой позиции start до конечной end из списка src . Если промежуток между конечной и начальной позицией равен 0,-1 то вернется весь список, если 0,0 то вернется первый элемент , если напимер начальная позиция больше конечной то вернется все (включая и позиции старта и конца)кроме того что было межу этими позициями.",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 },
-		 {
-		  "name" : "",
-		  "name_2" : "",
-		  "opesanie" : "",
-		  "url" : ""
-		 }
-		 
-	]
+{
+    "func": [{
+            "name": "llAbs",
+            "name_2": "integer llAbs(integer val);",
+            "opesanie": "Возвращает абсолютное число",
+            "url": ""
+        }, {
+            "name": "llAcos",
+            "name_2": "float llAcos(float val);",
+            "opesanie": "Возвращает арккосинус числа",
+            "url": ""
+        }, {
+            "name": "llAddToLandPassList",
+            "name_2": "llAddToLandPassList(key avatar, float hours);",
+            "opesanie": "Добавить аватара avatar к пропускному списку Этой земли на время hours",
+            "url": ""
+        }, {
+            "name": "llAdjustSoundVolume",
+            "name_2": "llAdjustSoundVolume(float volume);",
+            "opesanie": "Настроить громкость проигрывания звука прикрепленного к обьекту с этим скриптом и запущенного с помощью llPlaySound или llLoopSound. Эта функция не дает эффекта если не установлен тригер звука с помошью функции llTriggerSound",
+            "url": ""
+        }, {
+            "name": "llAllowInventoryDrop",
+            "name_2": "llAllowInventoryDrop(integer add);",
+            "opesanie": "Если add = TRUE, юзер не сможет модифицировать права доступа для выбрасывания из инвентаря ",
+            "url": ""
+        }, {
+            "name": "llAngleBetween",
+            "name_2": "float llAngleBetween(rotation a, rotation b);",
+            "opesanie": "Возвращает угол в радианах между поворотами a и b.",
+            "url": ""
+        }, {
+            "name": "llApplyImpulse",
+            "name_2": "llApplyImpulse(vector force, integer local);",
+            "opesanie": "Применить импульс force к локальной системе координат local если local = TRUE. Иначе приложенный импульс будет приложен к глобальной системе координат. Эта функция работает только с физическими обьектами.",
+            "url": ""
+        }, {
+            "name": "llApplyRotationalImpulse",
+            "name_2": "llApplyRotationalImpulse(vector force, integer local);",
+            "opesanie": "Задать импульс вращения force к системе координат local если local = TRUE. Иначе приложенный импульс будет приложен к глобальной системе координат. Эта функция работает только с физическими обьектами.",
+            "url": ""
+        }, {
+            "name": "llAsin",
+            "name_2": "float llAsin(float val);",
+            "opesanie": "Возвращает арксинус в радианах",
+            "url": ""
+        }, {
+            "name": "llAtan2",
+            "name_2": "float llAtan2(float y, float x);",
+            "opesanie": "Возвращает arctangent2 из y, x",
+            "url": ""
+        }, {
+            "name": "llAttachToAvatar",
+            "name_2": "llAttachToAvatar(key avatar, integer attachment);",
+            "opesanie": "Прикрепить к аватару в точку attachment. Требуется PERMISSION_ATTACH разрешение аватара на выполнения данной функции.",
+            "url": ""
+        }, {
+            "name": "llAvatarOnSitTarget",
+            "name_2": "key llAvatarOnSitTarget(void);",
+            "opesanie": "Если аватар сидит на обьекте предназначенном для сидения , возврашается ключ аватара, иначе возвращается NULL_KEY. Это единственная возможность обнаружить сидит ли аватар на обьекте определенном с помощью функции llSitTarget для сидения.",
+            "url": ""
+        }, {
+            "name": "llAxes2Rot",
+            "name_2": "rotation llAxes2Rot(vector fwd, vector left, vector up);",
+            "opesanie": "Возвращает свойства вращение обьекта , представленное в осевых координатах. Возвращает поворот системы заданной тремя координатами.",
+            "url": ""
+        }, {
+            "name": "llAxisAngle2Rot",
+            "name_2": "rotation llAxisAngle2Rot(vector axis, float angle);",
+            "opesanie": "Возвращает поворот rotation сгенерированный по углу angle на оси axis.",
+            "url": ""
+        }, {
+            "name": "llBase64ToString",
+            "name_2": "string llBase64ToString(string str);",
+            "opesanie": "Конвертирует строку Base 64 string в обычную строку. Если преабразование создает непонятный символ то функция конвертирует его в пробел.",
+            "url": ""
+        }, {
+            "name": "llBreakAllLinks",
+            "name_2": "llBreakAllLinks(void);",
+            "opesanie": "Разорвать связь всех обьектов в установленной связи(залинкованых или обьединеных в оди составной). Требует получения PERMISSION_CHANGE_LINKS разрешения.",
+            "url": ""
+        }, {
+            "name": "llBreakLink",
+            "name_2": "llBreakLink(integer linknum);",
+            "opesanie": "Разорвать связь с сгрупированным(залинкованным) обьектом linknum. Требует получения PERMISSION_CHANGE_LINKS разрешения после которого у нас будет право на разгрупировку.",
+            "url": ""
+        }, {
+            "name": "llCSV2List",
+            "name_2": "list llCSV2List(string src);",
+            "opesanie": "Создать список list из строки srс , данные в которой перечисляются через запятую.",
+            "url": ""
+        }, {
+            "name": "llCeil",
+            "name_2": "integer llCeil(float val);",
+            "opesanie": "Возвращает наибольшее integer значение >= val.",
+            "url": ""
+        }, {
+            "name": "llCloseRemoteDataChannel",
+            "name_2": "llCloseRemoteDataChannel",
+            "opesanie": "Закрывает XML-RPC канал открытый с помощью функции llOpenRemoteDataChannel .",
+            "url": ""
+        }, {
+            "name": "llCloud",
+            "name_2": "float llCloud(vector offset);",
+            "opesanie": "Возвращает плотность облака по текущим координатам смещенным на вектор offset .",
+            "url": ""
+        }, {
+            "name": "llCollisionFilter",
+            "name_2": "llCollisionFilter(string name, key id, integer accept);",
+            "opesanie": "Если допуск accept == TRUE, допускается только столкновение с обьектом name и id , иначе с обьектом без имени name или id. Спецификаторы могут принимать любую последовательность или NULL_KEY если не нужен фильтр на передачу параметра.",
+            "url": ""
+        }, {
+            "name": "llCollisionSound",
+            "name_2": "llCollisionSound(string impact_sound, float impact_volume);",
+            "opesanie": "Выключить звук столкновения по умолчанию, и заменить звуком удара с impact_sound находящимся в object inventory.",
+            "url": ""
+        }, {
+            "name": "llCollisionSprite",
+            "name_2": "llCollisionSprite(string impact_sprite);",
+            "opesanie": "Запретить появление спрайта при столкновения установленный по умолчанию, заменить толчковый спрайт на установленный по умолчанию impact_sprite из инвентаря обьекта. Только запретить спрайт столкновения установленный по умолчанию если строка пуста.",
+            "url": ""
+        }, {
+            "name": "llCos",
+            "name_2": "float llCos(float theta);",
+            "opesanie": "Возвращает косинус угла theta в заданного в радианах",
+            "url": ""
+        }, {
+            "name": "llCreateLink",
+            "name_2": "llCreateLink(key target, integer parent);",
+            "opesanie": "Создает связь(линк) обьекта с другим обектом по его ключу target. Требуется получить разрешение PERMISSION_CHANGE_LINKS . Если параметр parent = TRUE , то обьект прикрепится к корневому обьекту.",
+            "url": ""
+        }, {
+            "name": "llDeleteSubList",
+            "name_2": "list llDeleteSubList(list src, integer start, integer end);",
+            "opesanie": "Удаляет елементы из списка src начиная с позиции start и заканчивая позицией end. Если промежуток между конечной и начальной позицией равен 0,-1 то удалится весь список, если 0,0 то удалится первый элемент , если напимер нач позиция больше конечной то удалится все (включая и позиции старта и конца)кроме того что было межу этими позициями.",
+            "url": ""
+        }, {
+            "name": "llDeleteSubString",
+            "name_2": "string llDeleteSubString(string src, integer start, integer end);",
+            "opesanie": "Удаляет елементы из строки src начиная с позиции start и заканчивая позицией end. Если промежуток между конечной и начальной позицией равен 0,-1 то удалится все символы, если 0,0 то удалится первый символ , если напимер нач позиция больше конечной то удалится все (включая и позиции старта и конца)кроме того что было межу этими позициями.",
+            "url": ""
+        }, {
+            "name": "llDetachFromAvatar",
+            "name_2": "llDetachFromAvatar(key avatar);",
+            "opesanie": "Отсоединяет от автара присоединеную к нему вещь содержащую этот срипт с этой функцией по его ID.",
+            "url": ""
+        }, {
+            "name": "llDetectedGrab",
+            "name_2": "vector llDetectedGrab(integer number);",
+            "opesanie": "Возвращает вектор мгновенного движения обнаруженного обьекта по его номеру обнаружения. (не ID) . Возвращает <0,0,0> если номер не действительный.",
+            "url": ""
+        }, {
+            "name": "llDetectedGroup",
+            "name_2": "integer llDetectedGroup(integer number);",
+            "opesanie": "Возвращает TRUE если обнаруженный обьект number это участник группы владельца этого скрипта.",
+            "url": ""
+        }, {
+            "name": "llDetectedKey",
+            "name_2": "key llDetectedKey(integer number);",
+            "opesanie": "Возвращает ключ обнаруженного обьекта по его номеру обнаружения(маркеру) number. Возвращает NULL_KEY если номер не действительный.",
+            "url": ""
+        }, {
+            "name": "llDetectedLinkNumber",
+            "name_2": "integer llDetectedLinkNumber(integer number);",
+            "opesanie": "Возвращает номер обьединеного(залинкованного) обьекта по которобу было произведено нажатие и в результате чего было запущенно touches событие. 0 - если обьект не залинкован(необнаружен), 1 - если корневой обьект, 2,3,4... и т.д. - если обьект дочерний .",
+            "url": ""
+        }, {
+            "name": "llDetectedName",
+            "name_2": "string llDetectedName(integer number);",
+            "opesanie": "Возвращает имя по номеру обнаружения number обьекта. Возвращает пустую строку если номер не действительный и не совпадает с обнаруженными обьтектами.",
+            "url": ""
+        }, {
+            "name": "llDetectedOwner",
+            "name_2": "key llDetectedOwner(integer number);",
+            "opesanie": "Возвращает ключ обнаруженного обьекта владельца по номеру обнаружения number. Возвращает NULL_KEY если номер недействительный.",
+            "url": ""
+        }, {
+            "name": "llDetectedPos",
+            "name_2": "vector llDetectedPos(integer number);",
+            "opesanie": "Возвращает положение обнаруженного обьекта по его номеру обнаружения number .Возвращает <0,0,0> если number недействительный.",
+            "url": ""
+        }, {
+            "name": "llDetectedRot",
+            "name_2": "rotation llDetectedRot(integer number);",
+            "opesanie": "Возвращает поворот обнаруженного обьекта по его номеру обнаружения number .Возвращает <0,0,0,1> если number недействительный.",
+            "url": ""
+        }, {
+            "name": "llDetectedType",
+            "name_2": "integer llDetectedType(integer number);",
+            "opesanie": "Возвращает тип обнаруженного обьекта по его номеру обнаружения(маркеру) number . Тип является битовым полем содержащим в себе одну или несколько констант (AGENT, ACTIVE, PASSIVE, SCRIPTED). Возвращает 0 если указанный маркер number недействительный(т.е. Указан маркер несуществующего обьекта).",
+            "url": ""
+        }, {
+            "name": "llDetectedVel",
+            "name_2": "vector llDetectedVel(integer number);",
+            "opesanie": "Возвращает вектор скорости обнаруженного обьекта по его номеру обнаружения(маркеру) number .Возвращает <0,0,0> если number недействительный.",
+            "url": ""
+        }, {
+            "name": "llDialog",
+            "name_2": "llDialog(key avatar, string message, list buttons, integer channel);",
+            "opesanie": "Открывает 'бокс сообщения' в верхнем правом углу для данного аватара и выводит на экран сообщение. В сообщение может входить до 12 кнопок которые определяются в списке buttons. Когда аватар нажимает на кнопку имя кнопки передается по определенному каналу channel. Каналы используются такиеже как функцией llSay(), таким образом канал 0 может быть услышан каждым если он находится рядом так как это общественный канал.",
+            "url": ""
+        }, {
+            "name": "llDie",
+            "name_2": "llDie(void);",
+            "opesanie": "Удалить обьект содержащий этот скрипт.",
+            "url": ""
+        }, {
+            "name": "llDumpList2String",
+            "name_2": "string llDumpList2String(list src, string separator);",
+            "opesanie": "Создает строку из списка SRC используя SEPARATOR как разделитель элементов списка в строке",
+            "url": ""
+        }, {
+            "name": "llEscapeURL",
+            "name_2": "string llEscapeURL(string url);",
+            "opesanie": "Возвращает строку преобразованную в строку из escape кодов, например ( '' )прямые ковычки преобразуются вот в такую последовательность .Экономит 20% пространства.",
+            "url": ""
+        }, {
+            "name": "llEdgeOfWorld",
+            "name_2": "integer llEdgeOfWorld(vector pos, vector dir);",
+            "opesanie": "Возвращает TRUE если линия от начальных координат pos до конечных координат dir выходит за края текущего сима (земли ) . Возвращает FALSE если концы линии находятся за пределами сима.",
+            "url": ""
+        }, {
+            "name": "llEjectFromLand",
+            "name_2": "llEjectFromLand(key pest);",
+            "opesanie": "Выбросить вредителя pest с земельной собственности по его ключу.",
+            "url": ""
+        }, {
+            "name": "llEmail",
+            "name_2": "llEmail(string address, string subject, string message);",
+            "opesanie": "Послать email по адрессу address от субьекта subject и сообщение message.",
+            "url": ""
+        }, {
+            "name": "llEuler2Rot",
+            "name_2": "rotation llEuler2Rot(vector vec);",
+            "opesanie": "Возвращает поворот представленный в системе Эйлера vec.",
+            "url": ""
+        }, {
+            "name": "llFabs",
+            "name_2": "float llFabs(float val);",
+            "opesanie": "Возвращает абсолютное значение числа val.",
+            "url": ""
+        }, {
+            "name": "llFloor",
+            "name_2": "integer llFloor(float val);",
+            "opesanie": "Возвращает наибольшее integer значение <= val.",
+            "url": ""
+        }, {
+            "name": "llFrand",
+            "name_2": "float llFrand(float mag);",
+            "opesanie": "Возвращает случайное число в диапазоне [0, mag).",
+            "url": ""
+        }, {
+            "name": "llGetAccel",
+            "name_2": "vector llGetAccel(void);",
+            "opesanie": "Получает ускорение.",
+            "url": ""
+        }, {
+            "name": "llGetAttached",
+            "name_2": "integer llGetAttached(void);",
+            "opesanie": "Возвращает точку крепления обьекта к аватару или возвращает 0 если обьект не прикреплен.",
+            "url": ""
+        }, {
+            "name": "llGetAgentInfo",
+            "name_2": "integer llGetAgentInfo(key id);",
+            "opesanie": "Возвращает информацию о данном агенте по его ID. Возвращает в виде битового поля которое можно прочитать с помощью констант agent info constants.",
+            "url": ""
+        }, {
+            "name": "llGetAgentSize",
+            "name_2": "vector llGetAgentSize(key id);",
+            "opesanie": "Если ключ id агента находится в этомже симе что и обьект с этим скриптом, возвращает размер аватара.",
+            "url": ""
+        }, {
+            "name": "llGetAlpha",
+            "name_2": "float llGetAlpha(integer face);",
+            "opesanie": "Возвращает коофициент прозрачности alpha данной стороны face. Если сторона face является ALL_SIDES возвращает значение среднего числа альфы всех сторон.",
+            "url": ""
+        }, {
+            "name": "llGetAndResetTime",
+            "name_2": "float llGetAndResetTime(void);",
+            "opesanie": "Возвращает в секундах продолжительность во внутренем хронометре скрипта. Таймер сбрасывается в ноль при вызове этой функции. Таймер также сбрасывает on rez, симулятор перезапускается , скрипт сбрасывается , и вызывается функция llResetTime. Выберите функцию llSetTimerEvent если вы хотите надежный механизм выбора времени.",
+            "url": ""
+        }, {
+            "name": "llGetAnimation",
+            "name_2": "string llGetAnimation(key id);",
+            "opesanie": "Возвращает имя анимации происхдящей в данное с аватаром по его ID.",
+            "url": ""
+        }, {
+            "name": "llGetAnimationList",
+            "name_2": "list llGetAnimationList(key id);",
+            "opesanie": "Возвращает список анимаций аватара происхдящих в данное время по его ID.",
+            "url": ""
+        }, {
+            "name": "llGetBoundingBox",
+            "name_2": "list llGetBoundingBox(key object);",
+            "opesanie": "Возвращает ограничивающий прямоугольник вокруг обьекта object (включающий любой соединеный примитив) по отношению к корневому примитиву. Возвращает значение в списке list в форме : [ (vector) min_corner, (vector) max_corner ]",
+            "url": ""
+        }, {
+            "name": "llGetCenterOfMass",
+            "name_2": "vector llGetCenterOfMass(void);",
+            "opesanie": "Возвращает центр массы коренного обьекта.",
+            "url": ""
+        }, {
+            "name": "llGetColor",
+            "name_2": "vector llGetColor(integer face);",
+            "opesanie": "Возвращает цвет данной стороны face. Если сторона face является ALL_SIDES возвращает среднее значение каждого цветового канала.",
+            "url": ""
+        }, {
+            "name": "llGetCreator",
+            "name_2": "key llGetCreator(void);",
+            "opesanie": "Возвращает ключ создателя обьекта который имеет этот скрипт.",
+            "url": ""
+        }, {
+            "name": "llGetDate",
+            "name_2": "string llGetDate(void);",
+            "opesanie": "Возвращает текущую UTC(универсальную) дату в виде --- YYYY-MM-DD.",
+            "url": ""
+        }, {
+            "name": "llGetEnergy",
+            "name_2": "float llGetEnergy(void);",
+            "opesanie": "Возвращает энергию обьекта как процент от максимума.",
+            "url": ""
+        }, {
+            "name": "llGetForce",
+            "name_2": "vector llGetForce(void);",
+            "opesanie": "Возвращает поток силы если скрипт физический.",
+            "url": ""
+        }, {
+            "name": "llGetFreeMemory",
+            "name_2": "integer llGetFreeMemory(void);",
+            "opesanie": "Возвращает доступное пространство скриптового потока(т.е. Оставшуюся свободную память которую может использовать текущий скрипт).",
+            "url": ""
+        }, {
+            "name": "llGetGeometricCenter",
+            "name_2": "vector llGetGeometricCenter(void);",
+            "opesanie": "Возвращает геометрический центр сгрупированных(залинкованых) и прикрепленных к аватару обьектов.",
+            "url": ""
+        }, {
+            "name": "llGetGMTclock",
+            "name_2": "float llGetGMTclock(void);",
+            "opesanie": "Возвращает время в секундах начиная с GMT полночи.",
+            "url": ""
+        }, {
+            "name": "llGetInventoryCreator",
+            "name_2": "key llGetInventoryCreator(string name);",
+            "opesanie": "Возвращает ключ(идентификатор) создателя обьекта name находящегося в личном инвентаре текущего обьекта.",
+            "url": ""
+        }, {
+            "name": "llGetInventoryKey",
+            "name_2": "key llGetInventoryKey(string name);",
+            "opesanie": "Возвращает ключ по заданному имени name записи(или обьекта) в личном инвентаре текущего обьекта.",
+            "url": ""
+        }, {
+            "name": "llGetInventoryName",
+            "name_2": "string llGetInventoryName(integer type, integer number);",
+            "opesanie": "Получает имя записи в личном инвентаре текущего обьекта по заданому порядковому номеру number и типу type. Выбери константу inventory constants для точного определения типа type.",
+            "url": ""
+        }, {
+            "name": "llGetInventoryNumber",
+            "name_2": "integer llGetInventoryNumber(integer type);",
+            "opesanie": "Получает количество записей в личном инвентаре текущего обьекта по заданому типу type. Выбери константу inventory constants для точного определения типа type.",
+            "url": ""
+        }, {
+            "name": "llGetInventoryPermMask",
+            "name_2": "integer llGetInventoryPermMask(string item, integer mask);",
+            "opesanie": "Возвращает ответ на запрос о разрешение mask на использование обьекта для указанного обьекта в инвентаре. Ответ возвращается в виде битовых констант Permission Mask Constants по которым можно определить какие разрешения доступны для пользователя.",
+            "url": ""
+        }, {
+            "name": "llGetInventoryType",
+            "name_2": "integer llGetInventoryType(string name);",
+            "opesanie": "Возвращает тип обьекта name находящегося в инвентаре обьекта. Константа INVENTORY_NONE возвращается если в инвентаре не было найдено обьекта по имени name. Выбери константу inventory constants для сравнения с возвращенными функцией данными.",
+            "url": ""
+        }, {
+            "name": "llGetKey",
+            "name_2": "key llGetKey(void);",
+            "opesanie": "Получить ключ(идентификатор) обьекта с этим скриптом.",
+            "url": ""
+        }, {
+            "name": "llGetLandOwnerAt",
+            "name_2": "key llGetLandOwnerAt(vector pos);",
+            "opesanie": "Возвращает ключ владельца земли в точке этой земли pos или NULL_KEY если земля общественная.",
+            "url": ""
+        }, {
+            "name": "llGetLinkKey",
+            "name_2": "key llGetLinkKey(integer linknum);",
+            "opesanie": "Возвращает ключ обьединеного (залинкованного) обьекта по его порядковому номеру linknum . 0 -если не залинкован 1-если корневой 2- если дочерний. И т.д.",
+            "url": ""
+        }, {
+            "name": "llGetLinkName",
+            "name_2": "string llGetLinkName(integer linknum);",
+            "opesanie": "Возвращает имя обьединеного (залинкованного) обьекта по его порядковому номеру linknum . 0 -если не залинкован 1-если корневой 2- если дочерний. И т.д.",
+            "url": ""
+        }, {
+            "name": "llGetLinkNumber",
+            "name_2": "integer llGetLinkNumber(void);",
+            "opesanie": "Возвращает личный порядковый номер обьекта который обьединен с другими обьектами(залинкован) . 0 -если не залинкован 1-если корневой 2- если дочерний. И т.д.",
+            "url": ""
+        }, {
+            "name": "llGetListEntryType",
+            "name_2": "integer llGetListEntryType(list src, integer index);",
+            "opesanie": "Возвращает тип type переменной по индексу index в списке src.",
+            "url": ""
+        }, {
+            "name": "llGetListLength",
+            "name_2": "integer llGetListLength(list src);",
+            "opesanie": "Возвращает количество элементов в списке src.",
+            "url": ""
+        }, {
+            "name": "llGetLocalPos",
+            "name_2": "vector llGetLocalPos(void);",
+            "opesanie": "Возвращает локальную позицию обьекта относительно корневого обьекта .",
+            "url": ""
+        }, {
+            "name": "llGetLocalRot",
+            "name_2": "rotation llGetLocalRot(void);",
+            "opesanie": "Возвращает локальный угол поворота обьекта относительно корневого обьекта.",
+            "url": ""
+        }, {
+            "name": "llGetMass",
+            "name_2": "float llGetMass(void);",
+            "opesanie": "Возвращает массу обьекта в киллограммах. Многие материалы в SL немного меньшей плотности чем в жизни , таким образом возвращается масса немного меньше чем вы можете представить.",
+            "url": ""
+        }, {
+            "name": "llGetObjectMass",
+            "name_2": "float llGetObjectMass(key id);",
+            "opesanie": "Возвращает массу обьекта в киллограммах по его идентификатору ID. Многие материалы в SL немного меньшей плотности чем в жизни , таким образом возвращается масса немного меньше чем вы можете представить.",
+            "url": ""
+        }, {
+            "name": "llGetNextEmail",
+            "name_2": "llGetNextEmail(string address, string subject);",
+            "opesanie": "Получает следующий ожидаемый емайл с соответствующего адреса address и/или от соответствующего субьекта subject. Если параметры не заданы то данные не будут отфильтрованы и поступит первый попавшийся емайл.",
+            "url": ""
+        }, {
+            "name": "llGetNotecardLine",
+            "name_2": "key llGetNotecardLine(string name, integer line);",
+            "opesanie": "Эта функция по номеру строки line блокнота name получает содержимое одной строки через dataserver событие . Нумерация строк начинается с нуля. Если линия запроса подошла к концу блокнота dataserver событие вернет константу EOF string. Ключ возвращенный этой функцией это идетификатор который будет передаваатся dataserver событию в requested параметре.",
+            "url": ""
+        }, {
+            "name": "llGetNumberOfNotecardLines",
+            "name_2": "key llGetNumberOfNotecardLines(string name);",
+            "opesanie": "Эта функция подсчитывает количество строк блокнота name (находящегося в инвентаре обьекта) и возвращает их количество через dataserver событие . Ключ возвращенный этой функцией это идетификатор который будет передаваатся dataserver событию в requested параметре , его можно использовать для сверки - на какой запрос был получен ответ.",
+            "url": ""
+        }, {
+            "name": "llGetNumberOfPrims",
+            "name_2": "integer llGetNumberOfPrims(void);",
+            "opesanie": "Возвращает количество примитивов в сгрупированном(залинкованном или составном) обьекте .",
+            "url": ""
+        }, {
+            "name": "llGetNumberOfSides",
+            "name_2": "integer llGetNumberOfSides(void);",
+            "opesanie": "Возвращает количество сторон(граней) обьекта который содержит этот скрипт.",
+            "url": ""
+        }, {
+            "name": "llGetObjectDesc",
+            "name_2": "string llGetObjectDesc(void);",
+            "opesanie": "Возвращает дескриптор (описание такоеже примерно как name) обьекта который содержит этот скрипт.",
+            "url": ""
+        }, {
+            "name": "llGetObjectName",
+            "name_2": "string llGetObjectName(void);",
+            "opesanie": "Возвращает имя обьекта который содержит этот скрипт.",
+            "url": ""
+        }, {
+            "name": "llGetObjectPermMask",
+            "name_2": "integer llGetObjectPermMask(integer mask);",
+            "opesanie": "Возвращает ответ на запрос о разрешении маски mask для прикрепления корневого обьекта . Смотри Permission Mask Constants для большей информации. Возвращаемое значение является битовым полем.",
+            "url": ""
+        }, {
+            "name": "llGetOmega",
+            "name_2": "vector llGetOmega(void);",
+            "opesanie": "Возвращает омегу - Скорость вращения по трем осям.",
+            "url": ""
+        }, {
+            "name": "llGetOwner",
+            "name_2": "key llGetOwner(void);",
+            "opesanie": "Возвращает ключ(идетификатор) владельца обьекта (владелец это не тоже самое что создатель владелец это тот аватар который имеет текущий предмет у себя в инвентаре).",
+            "url": ""
+        }, {
+            "name": "llGetOwnerKey",
+            "name_2": "key llGetOwnerKey(key id);",
+            "opesanie": "Возвращает ключ(идентификатор) владельца обьекта по id(идентификатору) этого обьекта.",
+            "url": ""
+        }, {
+            "name": "llGetPermissions",
+            "name_2": "integer llGetPermissions(void);",
+            "opesanie": "Возвращает информацию о том какие права permissions были разрешены(выданны) . Возвращаемое значение является битовым полем (тоесть может содержать множественный ответ каждый из которых сверяется с константой).",
+            "url": ""
+        }, {
+            "name": "llGetPermissionsKey",
+            "name_2": "key llGetPermissionsKey(void);",
+            "opesanie": "Возвращает ключ аватара если для него разрешены права (у нешо есть право). Возвращает NULL_KEY если нет разрешения.",
+            "url": ""
+        }, {
+            "name": "llGetPos",
+            "name_2": "vector llGetPos(void);",
+            "opesanie": "Возвращает позицию обьекта в глобальных координатах сима(острова).",
+            "url": ""
+        }, {
+            "name": "llGetPrimitiveParams",
+            "name_2": "list llGetPrimitiveParams(list parameters);",
+            "opesanie": "Эта функция получает список установленых параметров текущего примитива. В списке parameters используются константы Primitive Constants обозначающие имя каждого параметра.",
+            "url": ""
+        }, {
+            "name": "llGetRegionCorner",
+            "name_2": "llGetRegionCorner(void);",
+            "opesanie": "Возвращает вектор юго-западного угла текущего региона.",
+            "url": ""
+        }, {
+            "name": "llGetRegionFPS",
+            "name_2": "llGetRegionFPS(void);",
+            "opesanie": "Возвращает среднюю частоту кадров в текущем регионе (тоесть возвращает FPS текущего сима).",
+            "url": ""
+        }, {
+            "name": "llGetRegionName",
+            "name_2": "string llGetRegionName(void);",
+            "opesanie": "Возвращает имя текущего региона.",
+            "url": ""
+        }, {
+            "name": "llGetRegionTimeDilation",
+            "name_2": "float llGetRegionTimeDilation(void);",
+            "opesanie": "Возвращает текущее расширенное время в виде числа в промежутке от 0 до 1.",
+            "url": ""
+        }, {
+            "name": "llGetRootPosition",
+            "name_2": "vector llGetRootPosition(void);",
+            "opesanie": "Возвращает глобальное положение коренного обьекта из прикрепленного(залинкованного) к нему обьекта в котором находится этот скрипт.",
+            "url": ""
+        }, {
+            "name": "llGetRootRotation",
+            "name_2": "rotation llGetRootRotation(void);",
+            "opesanie": "Возвращает глобальное поворот коренного обьекта из прикрепленного(залинкованного) к нему обьекта в котором находится этот скрипт.",
+            "url": ""
+        }, {
+            "name": "llGetRot",
+            "name_2": "rotation llGetRot(void);",
+            "opesanie": "Возвращает поворот обьекта с этим скриптом.",
+            "url": ""
+        }, {
+            "name": "llGetScale",
+            "name_2": "vector llGetScale(void);",
+            "opesanie": "Возвращает масштаб обьекта с этим скриптом.",
+            "url": ""
+        }, {
+            "name": "llGetScriptName",
+            "name_2": "string llGetScriptName(void);",
+            "opesanie": "Возвращает имя текущего скрипта.",
+            "url": ""
+        }, {
+            "name": "llGetStartParameter",
+            "name_2": "integer llGetStartParameter(void);",
+            "opesanie": "Возвращает стартовые параметры переданные при вызове функций llRezObject или llRezAtRoot. Если обьект создан из инвентаря агента, то эта функция возвращает 0.",
+            "url": ""
+        }, {
+            "name": "llGetScriptState",
+            "name_2": "integer llGetScriptState(string name);",
+            "opesanie": "Установить Rest TRUE если скипт name запущен.",
+            "url": ""
+        }, {
+            "name": "llGetStatus",
+            "name_2": "integer llGetStatus(integer status);",
+            "opesanie": "Возвращает значение статуса status. Единственное значение будет в виде константы status constants. С помощью этой функции можно получить такие данные об оьекте как: физический обьект или нет, является ли обьект фантомом, по каким осям заблокирован поворот обьекта, можно ли его передвигать с помощью курсора мышки «Рука» и т.д.",
+            "url": ""
+        }, {
+            "name": "llGetSubString",
+            "name_2": "string llGetSubString(string src, integer start, integer end);",
+            "opesanie": "Возвращает часть строки src начиная от стартовой позиции start до конечной end, таким образом 0, 1 длина захватывает всю строку и 0,0 захватывает первый символ. Использование отрицательного номера start и/или end подсчитывает в обратном направлении в результате 0,-1 захватывает всю строку. Если start больше end то захватится вся строка за исключением символов в диапазоне от start до end. Например 6,4 захватит всю строку кроме 5 символов.",
+            "url": ""
+        }, {
+            "name": "llGetSunDirection",
+            "name_2": "vector llGetSunDirection(void);",
+            "opesanie": "Возвращает вектор направления солнца всимуляторе.",
+            "url": ""
+        }, {
+            "name": "llGetTexture",
+            "name_2": "string llGetTexture(integer face);",
+            "opesanie": "Возвращает имя текстуры с заданой стороны обьекта если такая тектстура присутствует в инвентаре обьекта",
+            "url": ""
+        }, {
+            "name": "llGetTextureOffset",
+            "name_2": "vector llGetTextureOffset(integer side);",
+            "opesanie": "Возвращает смещение текстуры на стороне обьекта side в X и Y компонентах вектора.",
+            "url": ""
+        }, {
+            "name": "llGetTextureRot",
+            "name_2": "float llGetTextureRot(integer side);",
+            "opesanie": "Возвращает поворот текстуры на стороне side.",
+            "url": ""
+        }, {
+            "name": "llGetTextureScale",
+            "name_2": "vector llGetTextureScale(integer side);",
+            "opesanie": "Возвращает маштаб текстуры на стороне side в X и Y компонентах вектора.",
+            "url": ""
+        }, {
+            "name": "llGetTime",
+            "name_2": "float llGetTime(void);",
+            "opesanie": "Возвращает второе астрономическое время из внутреннего таймера связанного со скриптом. Таймер сбрасывается on rez, симулятор перестартовывает, скрипт сбрасывается, и в вызове llGetAndResetTime или llResetTime. Выбераем llSetTimerEvent если вы хотите надежный временной механизм.",
+            "url": ""
+        }, {
+            "name": "llGetTimeOfDay",
+            "name_2": "float llGetTimeOfDay(void);",
+            "opesanie": "Получить времяв секундах осчитывая с полночи в SECOND LIFE.",
+            "url": ""
+        }, {
+            "name": "llGetTimestamp",
+            "name_2": "string llGetTimestamp(void);",
+            "opesanie": "Получить время в формате : YYYY-MM-DDThh:mm:ss.ff..fZ.",
+            "url": ""
+        }, {
+            "name": "llGetTorque",
+            "name_2": "vector llGetTorque(void);",
+            "opesanie": "Получить момент вращения если скрипт физический.",
+            "url": ""
+        }, {
+            "name": "llGetVel",
+            "name_2": "vector llGetVel();",
+            "opesanie": "Возвращает скорость.",
+            "url": ""
+        }, {
+            "name": "llGetWallclock",
+            "name_2": "float llGetWallclock(void);",
+            "opesanie": "Возвращает время в секундах с тех пор как в симуляторе наступила полночь. В настоящее время это PST.",
+            "url": ""
+        }, {
+            "name": "llGiveInventory",
+            "name_2": "llGiveInventory(key destination, string inventory);",
+            "opesanie": "Выдать деталь из инвентаря inventory Аватару или обьекту ключ которого указан в destination. Если получатель является Аватаром, тогда аватар после этого следует нормальной процедуре принятия или отказа от предложения. Если получатель является какимлибо обьектом то права доступа будут применятся как будто это были вы и перемещали в инвентаре обьекты вручную, если функция llAllowInventoryDrop была вызвана с TRUE параметрами любой другой обьект может быть пропущен в инвентарь.",
+            "url": ""
+        }, {
+            "name": "llGiveInventoryList",
+            "name_2": "llGiveInventoryList(key destination, string category, list inventory);",
+            "opesanie": "Выдать указанный перечень деталей из инвентаря аватару или обьекту ключ которого destination в томже симуляторе где находится обьект у которого это берут. Если получатель является аватаром, то он после этого следует нормальной процедуре принятия или отказа от предложения. Предложенный инвентарь после этого помещяется в папку названную category в инвентаре получателя. Если получатель является любым обьектом то к нему применяются права также как если бы это были вы и перемещали в инвентаре обьекты вручную, если llAllowInventoryDrop была вызвана с TRUE параметрами любой другой обьект может быть пропущен в инвентарь.",
+            "url": ""
+        }, {
+            "name": "llGiveMoney",
+            "name_2": "llGiveMoney(key destination, integer amount);",
+            "opesanie": "Передает сумму amount с помощью скрипта владельца в пункту назначения destination . Это вызов не будет успешным если не был установленно разрешение PERMISSION_DEBIT",
+            "url": ""
+        }, {
+            "name": "llGround",
+            "name_2": "float llGround(vector offset);",
+            "opesanie": "Возвращает высоту земли по кординатам обьекта со смещение координат offset",
+            "url": ""
+        }, {
+            "name": "llGroundContour",
+            "name_2": "vector llGroundContour(vector offset);",
+            "opesanie": "Возвращает контур земли по кординатам обьекта со смещение координат offset",
+            "url": ""
+        }, {
+            "name": "llGroundNormal",
+            "name_2": "vector llGroundNormal(vector offset);",
+            "opesanie": "Возвращает вектор нормалей земли по кординатам обьекта со смещение координат offset",
+            "url": ""
+        }, {
+            "name": "llGroundRepel",
+            "name_2": "llGroundRepel(float height, integer water, float tau);",
+            "opesanie": "Критическая аммортизация(тормоз) по высоте height , если высота в пределах height * 0.5 уровня. Height выше уровня земли вода water - FALSE , или выше уровня земли и вода если water - TRUE",
+            "url": ""
+        }, {
+            "name": "llGroundSlope",
+            "name_2": "vector llGroundSlope(vector offset);",
+            "opesanie": "Возвращает уклон земли под позицией обьекта со смещением offset",
+            "url": ""
+        }, {
+            "name": "llInsertString",
+            "name_2": "string llInsertString(string dst, integer position, string src);",
+            "opesanie": "Вставить строку src в строку dst на позицию position и вернуть результат.",
+            "url": ""
+        }, {
+            "name": "llInstantMessage",
+            "name_2": "llInstantMessage(key user, string message);",
+            "opesanie": "Послать сообщение message юзеру(по ключу) user согласно мнгновенному сообщению.",
+            "url": ""
+        }, {
+            "name": "llKey2Name",
+            "name_2": "string llKey2Name(key id);",
+            "opesanie": "Если обьект с этим ID находится в этомже симуляторе(територии), возвращается имя обьекта.",
+            "url": ""
+        }, {
+            "name": "llList2CSV",
+            "name_2": "string llList2CSV(list src);",
+            "opesanie": "Создает строку отделенную запятыми со значениями из списка src.",
+            "url": ""
+        }, {
+            "name": "llList2Float",
+            "name_2": "float llList2Float(list src, integer index);",
+            "opesanie": "Возвращает значение с плав точкой float по индексу index из списка src.",
+            "url": ""
+        }, {
+            "name": "llList2Integer",
+            "name_2": "integer llList2Integer(list src, integer index);",
+            "opesanie": "Возвращает целое integer по индексу index из списка src.",
+            "url": ""
+        }, {
+            "name": "llList2Key",
+            "name_2": "key llList2Key(list src, integer index);",
+            "opesanie": "Возвращает ключ key по индексу index из списка src.",
+            "url": ""
+        }, {
+            "name": "llList2List",
+            "name_2": "list llList2List(list src, integer start, integer end);",
+            "opesanie": "Возвращает новый список как часть списка от стартовой позиции start до конечной end из списка src . Если промежуток между конечной и начальной позицией равен 0,-1 то вернется весь список, если 0,0 то вернется первый элемент , если напимер начальная позиция больше конечной то вернется все (включая и позиции старта и конца)кроме того что было межу этими позициями.",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }, {
+            "name": "",
+            "name_2": "",
+            "opesanie": "",
+            "url": ""
+        }
+
+    ]
 }
