@@ -17,7 +17,8 @@ $(function() {
             var myExp = new RegExp(linkURL, "i");
             var output = '';
             $.each(data.event, function(key, val) {
-                if (val.name.search(myExp) != -1) {
+                console.log(val.name.search(myExp));
+                if (val.name.search(myExp) === 0) {
                     output += '<div class="name-f ">';
                     output += '<h2><span class="txtsh">' + val.name + '</span></h2></div>';
                     output += '<ul class="list-group material-list-group material-list-group">';
@@ -35,7 +36,7 @@ $(function() {
             });
             output += '</div></div></div></div>';
             $('.update').html(output);
-            console.log(output);
+            //console.log(output);
 
         });
 
@@ -53,7 +54,8 @@ $(function() {
             var myExp = new RegExp(linkURL, "i");
             var output = '';
             $.each(data.func, function(key, val) {
-                if (val.name.search(myExp) != -1) {
+                console.log(val.name.search(myExp));
+                if (val.name.search(myExp) === 0) {
                     output += '<div class="name-f ">';
                     output += '<h2><span class="txtsh">' + val.name + '</span></h2></div>';
                     output += '<ul class="list-group material-list-group material-list-group">';
