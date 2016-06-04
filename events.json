@@ -72,12 +72,6 @@
 		  "url" : "land_collision_end"
 		 },
 		 {
-		  "name" : "land_collision_end",
-		  "name_2" : "land_collision_end(vector position);",
-		  "opesanie" : "Это событие запускается когда обьект прекращает сталкиватся с землей.",
-		  "url" : "land_collision_end"
-		 },
-		 {
 		  "name" : "land_collision_start",
 		  "name_2" : "land_collision_start(vector position);",
 		  "opesanie" : "Это событие запускается когда обьект начал сталкиватся с землей.",

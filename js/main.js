@@ -14,7 +14,7 @@ $(function() {
             e.preventDefault(); // Предотвратить href от перенаправления напрямую
             var linkURL = $(this).attr("href");
 
-            var myExp = new RegExp(linkURL, "i");
+            var myExp = $(this).attr("href"); //new RegExp(linkURL, "i");
             var output = '';
             $.each(data.event, function(key, val) {
                 console.log(val.name.search(myExp));
@@ -31,10 +31,10 @@ $(function() {
                     output += '<div class="modal-body material-modal__body" style="padding: 0;"><div class="embed-responsive embed-responsive-16by9">';
                     output += '<iframe class="embed-responsive-item" src="https://wiki.secondlife.com/wiki/' + val.name + '"></iframe></div></div>';
                     output += '<div class="modal-footer material-modal__footer"><button class="btn material-btn " data-dismiss="modal">Close</button>';
-
+                    output += '</div></div></div></div><div style="display: none;">';
                 }
             });
-            output += '</div></div></div></div>';
+            output += '</div>';
             $('.update').html(output);
             //console.log(output);
 
@@ -68,10 +68,10 @@ $(function() {
                     output += '<div class="modal-body material-modal__body" style="padding: 0;"><div class="embed-responsive embed-responsive-16by9">';
                     output += '<iframe class="embed-responsive-item" src="https://wiki.secondlife.com/wiki/' + val.name + '"></iframe></div></div>';
                     output += '<div class="modal-footer material-modal__footer"><button class="btn material-btn " data-dismiss="modal">Close</button>';
-
+                    output += '</div></div></div></div><div style="display: none;">';
                 }
             });
-            output += '</div></div></div></div>';
+            output += '</div>';
             $('.update').html(output);
             console.log(output);
 
