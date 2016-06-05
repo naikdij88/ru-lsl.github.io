@@ -1,8 +1,17 @@
 $(function() {
     $.getJSON("constants.json", function(data) {
-        var template = $('#const').html();
-        var html = Mustache.render(template, data);
-        $('.content-k').html(html);
+        //var template = $('#const').html();
+        var template2 = $('#const2').html();
+        //var html = Mustache.render(template, data);
+        var html2 = Mustache.render(template2, data);
+        //$('.content-k').html(html);
+        $('.content-pk').html(html2);
+
+
+    });
+
+    $('.hr-k').click(function(e) {
+        e.preventDefault(); // Предотвратить href от перенаправления напрямую
     });
 
     $.getJSON("events.json", function(data) {
