@@ -88,47 +88,47 @@
     },
     {
       "name": "INVENTORY_TEXTURE",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },
     {
       "name": "INVENTORY_SOUND",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },
     {
       "name": "INVENTORY_OBJECT",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },
     {
       "name": "INVENTORY_SCRIPT",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },
     {
       "name": "INVENTORY_LANDMARK",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },
     {
       "name": "INVENTORY_CLOTHING",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },
     {
       "name": "INVENTORY_NOTECARD",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },
     {
       "name": "INVENTORY_BODYPART",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },
     {
       "name": "INVENTORY_ANIMATION",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },
     {
       "name": "INVENTORY_GESTURE",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },
     {
       "name": "INVENTORY_ALL",
-      "opesanie": ""
+      "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
     },{
       "name": "INVENTORY_NONE",
       "opesanie": "Каждая константа ссылается на названный тип обьекта из инвентаря."
