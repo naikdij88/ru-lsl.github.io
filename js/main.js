@@ -82,7 +82,7 @@ $(function() {
                     output += '<div class="name-f ">';
                     output += '<h2><span class="txtsh">' + val.name + '</span></h2></div>';
                     output += '<ul class="list-group material-list-group material-list-group">';
-                    output += '<li class="list-group-item material-list-group__item"><code>' + val.name_2 + '</code></li>';
+                    output += '<li class="list-group-item material-list-group__item">' + val.name_2 + '</li>';
                     output += '<li class="list-group-item material-list-group__item">' + val.opesanie + '</li></ul>';
                     output += '<button class="btn material-btn material-btn_danger glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal_danger"> WIKI</button>';
                     output += '<div class="modal material-modal material-modal_danger fade" id="myModal_danger"><div class="modal-dialog ">';
