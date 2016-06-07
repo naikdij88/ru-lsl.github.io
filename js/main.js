@@ -1,18 +1,32 @@
 $(function() {
     $.getJSON("constants.json", function(data) {
-        //var template = $('#const').html();
-        var template2 = $('#const2').html();
-        //var html = Mustache.render(template, data);
-        var html2 = Mustache.render(template2, data);
-        //$('.content-k').html(html);
-        $('.content-pk').html(html2);
+        var template = $('#const').html();
+        var html = Mustache.render(template, data);
+        //$('.content-k14').html(html);
 
+        $('.hr-kp').click(function(e) {
+            e.preventDefault(); // Предотвратить href от перенаправления напрямую
+            //var linkURL = $(this).attr("href");
+            var myExp = $(this).attr("href"); //new RegExp(linkURL, "i");
+            var output = '<br/><br/><br/>';
+            //console.log(myExp);
+            $.each(data.cans, function(key, val) {
+                //console.log(val.name.search(myExp));
+                if (val.name.search(myExp) === 0) {
+                    output += '<ul class="list-group material-list-group material-list-group">';
+                    output += '<li class="list-group-item material-list-group__item">' + val.name + '</li>';
+                    output += '<li class="list-group-item material-list-group__item">' + val.opesanie + '</li>';
+                    output += '</ul></ul><div style="display: none;">';
+                }
+            });
+            output += '</div>';
+            $('.update').html(output);
+            //console.log(output);
+        });
 
     });
 
-    $('.hr-k').click(function(e) {
-        e.preventDefault(); // Предотвратить href от перенаправления напрямую
-    });
+
 
     $.getJSON("events.json", function(data) {
         var template = $('#event').html();
@@ -21,7 +35,7 @@ $(function() {
 
         $('.hr-e').click(function(e) {
             e.preventDefault(); // Предотвратить href от перенаправления напрямую
-            var linkURL = $(this).attr("href");
+            //var linkURL = $(this).attr("href");
 
             var myExp = $(this).attr("href"); //new RegExp(linkURL, "i");
             var output = '';
@@ -68,7 +82,7 @@ $(function() {
                     output += '<div class="name-f ">';
                     output += '<h2><span class="txtsh">' + val.name + '</span></h2></div>';
                     output += '<ul class="list-group material-list-group material-list-group">';
-                    output += '<li class="list-group-item material-list-group__item">' + val.name_2 + '</li>';
+                    output += '<li class="list-group-item material-list-group__item"><code>' + val.name_2 + '</code></li>';
                     output += '<li class="list-group-item material-list-group__item">' + val.opesanie + '</li></ul>';
                     output += '<button class="btn material-btn material-btn_danger glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#myModal_danger"> WIKI</button>';
                     output += '<div class="modal material-modal material-modal_danger fade" id="myModal_danger"><div class="modal-dialog ">';
